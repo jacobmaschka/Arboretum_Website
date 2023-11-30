@@ -285,9 +285,7 @@ function showtree(xml2){
 
             }
 
-
-            txt2 += "<div id=treeDetails></div>"
-            document.getElementById("currentTree").innerHTML = txt2
+            document.getElementById("treeInfo").innerHTML = txt2
             break
         }
         
