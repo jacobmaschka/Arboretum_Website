@@ -118,7 +118,7 @@ function displayDetails(tree) {
 
     var nameElement = document.createElement('h3');
     nameElement.textContent = tree.name + " (ID: " + tree.id + ")";
-    detailsDiv.appendChild(nameElement);
+    //detailsDiv.appendChild(nameElement);
 
     saveTree(tree.id)
     // If the tree has an image, display it
