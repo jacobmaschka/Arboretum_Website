@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="myStyle.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body onload ="loadXMLDoc1()">
+  <div class="canvas">
+    <header class="header header--main header--unpinned">
+      <!--Desktop Header Top Nav-->
+      <div class="header-top desktop-only">
+          <div class="header-top__container">
+            <a href="/" class="header-main__logo">
+              <span class="screen-reader-text">
+                Winona State University
+              </span>
+              <span class="svg svg--logo-full header-main__logo">
+                <svg viewBox="0 0 365 117" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="#FEFEFE" fill-rule="evenodd">
+                    <path d="M18.168 5.256c1.312 2.755 3.773 4.496 6.394 5.902 6.5 3.483 14.515 5.632 17.564 12.924 2.48 5.92.93 12.662-1.848 18.208-.796 1.587-2.124 3.608-3.997 3.894 2.578-4.729 1.06-10.472-3.3-13.735-5.946-4.457-11.704-7.725-15.684-14.154-3.207-5.174-6.408-13.779.041-17.41-.149 1.536.178 2.992.83 4.371">
+                    </path>
+                    <path d="M46.254 23.895c-.763-2.543-1.768-4.958-2.04-7.631-.304-2.968.934-6.017 3.62-7.434.231 1.824-.104 3.61.815 5.296 1.92 3.526 4.695 6.034 6.576 9.592 2.257 4.256 1.957 9.563-1.692 12.756-3.883 3.394-8.693 5.493-11.5 9.876-1.23-2.282-.41-4.817.56-6.953 2.195-4.825 5.347-9.865 3.661-15.502M27.411 32.605c2.675 1.094 5.193 2.405 7.02 4.802 1.838 2.41 1.998 5.407 1.221 8.188-1.507-1.66-2.978-3.386-5.168-4.126-2.752-.927-5.488-1.418-8.005-2.872-2.45-1.408-4.198-3.398-5.655-5.877-1.776-3.026-2.53-7.374.35-9.835-.447 2.369-.243 5.257 1.915 6.572 2.572 1.567 5.543 2.015 8.322 3.148M37.5 47.429c4.599 0 9.136.018 13.747.016.008 2.015-.027 3.834 0 5.942-4.7 1.613-9.697 3.299-14.308 5.143-5.026-2.095-10.453-3.452-15.478-5.546-.024-1.964.025-3.483 0-5.54 5.477 0 10.968-.015 16.039-.015M17.681 59.026c1.801 0 3.046 0 4.658-.01-2.485 5.717-3.439 12.01-3.846 18.16-.516 7.764-1.053 15.753 1.287 23.308.791 2.56 4.188 4.204 6.751 2.238 1.867-1.434 2.516-3.488 2.574-5.606.341-12.546.842-25.178.906-37.948 4.827-.014 9.02.035 13.934 0 .315 12.786.183 25.694.6 38.542.078 2.332 1.59 5.006 3.805 5.62 3.68 1.03 6.484-3.025 6.73-6.36.93-12.659.684-25.943-4.074-37.895 7.675 0 14.311.044 21.466 0-2.563 18.976-5.866 38.243-8.537 57.201-6.492-2.483-12.832-5.505-19.867-6.25-11.674-1.235-23.505.944-33.819 6.474C6.57 97.43 4.02 78.171.884 59.016c5.675-.012 11.333.01 16.797.01M164.631 28.586v2.906c-4.364.565-5.09.969-6.22 4.682-1.212 3.879-3.476 11.55-5.817 20.273l-7.51 28.03h-10.259l-9.934-37.8h-.244l-9.531 37.8h-10.177l-7.107-26.978c-2.263-8.402-4.283-16.235-6.059-22.132-.889-2.906-1.453-3.472-5.492-3.875v-2.906h23.183v2.906l-3.719.565c-.887.083-1.369.404-1.612.888-.163.485-.083 1.213.162 2.18l9.207 36.51h.162l10.016-41.841h8.965l10.661 41.84h.323l4.606-18.173c2.503-10.098 3.713-16.074 4.036-18.094.323-1.937.162-2.99-1.533-3.227l-4.604-.648v-2.906h18.497Z">
+                    </path>
+                    <path d="M178.814 64.507c0 3.07.482 3.37 4.76 3.55v2.288h-19.15v-2.288c4.275-.18 4.755-.48 4.755-3.55v-29.99c0-3.07-.48-3.37-4.755-3.554v-2.287h19.15v2.287c-4.278.184-4.76.484-4.76 3.554v29.99ZM201.336 28.675c6.204 9.575 12.587 19.09 18.968 28.665h.239V43.851c0-4.938-.058-7.225-.3-9.393-.181-2.108-.843-3.07-2.529-3.193l-3.373-.303v-2.287h14.511v2.287l-2.105.303c-1.386.182-1.988 1.085-2.169 3.193-.24 2.106-.3 4.455-.3 9.393v26.494h-6.623a2647.2 2647.2 0 0 0-21.859-33.597h-.239v18.424c0 4.937.058 7.227.299 9.393.18 2.108.842 3.071 2.528 3.19l3.372.301v2.29h-14.512v-2.29l2.108-.3c1.383-.18 1.989-1.083 2.166-3.19.242-2.107.305-4.457.305-9.394V34.517c0-3.07-.482-3.37-4.758-3.555v-2.287h14.271ZM253.184 68.48c-8.731 0-9.814-10.779-9.938-18.969.124-7.709 1.207-18.969 9.938-18.969 8.729 0 9.814 11.26 9.935 18.969-.121 8.19-1.206 18.969-9.935 18.969m0-40.706c-13.85 0-20.593 8.128-20.593 21.737 0 13.61 6.743 21.741 20.593 21.741 13.847 0 20.594-8.131 20.594-21.741 0-13.609-6.747-21.737-20.594-21.737M292.031 28.675c6.204 9.575 12.585 19.09 18.97 28.665h.239V43.851c0-4.938-.06-7.225-.302-9.393-.179-2.108-.843-3.07-2.529-3.193l-3.371-.303v-2.287h14.511v2.287l-2.109.303c-1.385.182-1.984 1.085-2.163 3.193-.242 2.106-.306 4.455-.306 9.393v26.494h-6.623a2646.984 2646.984 0 0 0-21.857-33.597h-.237v18.424c0 4.937.056 7.227.296 9.393.179 2.108.845 3.071 2.531 3.19l3.371.301v2.29h-14.511v-2.29l2.107-.3c1.384-.18 1.988-1.083 2.167-3.19.242-2.107.302-4.457.302-9.394V34.517c0-3.07-.481-3.37-4.757-3.555v-2.287h14.271Z">
+                    </path>
+                    <path d="m326.13 60.73 6.541-20.922h.245l6.298 20.922H326.13Zm1.13 23.747v-3.07l-4.843-.403c-1.782-.163-1.859-1.132-1.452-2.906.965-4.366 2.418-8.725 3.872-13.49h15.67l4.2 13.41c.564 1.692.325 2.744-1.373 2.906l-4.685.483v3.07h25.526v-3.07c-4.2-.077-5.252-.566-6.301-3.876l-15.913-48.945h-10.178l-9.366 27.218c-2.909 8.32-5.575 16.477-7.512 21.403-1.295 3.393-2.183 3.956-6.545 4.2v3.07h18.9ZM147.394 101.419c.132-1.72-.794-3.018-2.62-3.018-2.665 0-2.953 1.674-2.953 2.952 0 1.145.51 1.849 1.566 2.245.878.331 1.74.662 2.619.991 3.128 1.168 3.7 2.27 3.7 4.451 0 3.127-1.96 4.954-5.128 4.954-1.633 0-3.57-.462-4.519-2.621-.35-.814-.33-2.136-.35-3.018h1.828c-.092 2.449.374 3.988 3.125 3.988 1.85 0 3.151-.947 3.151-2.882 0-2.514-1.014-2.537-2.686-3.176-.904-.353-2.357-.812-3.238-1.277-1.566-.793-1.96-2.113-1.96-3.743 0-2.734 1.915-4.517 4.604-4.517 3.013 0 4.866 1.563 4.689 4.671h-1.828ZM151.161 97.078h10.374v1.653h-4.272v14.866h-1.828V98.731h-4.274zM168.914 107.19h-4.361l2.182-8.789h.045l2.134 8.789Zm-8.041 6.411h2.027l1.213-4.759h5.221l1.298 4.759h2.027l-4.646-16.519h-2.424l-4.716 16.519ZM172 97.082h10.373v1.651h-4.27v14.868h-1.829V98.733H172zM184.313 113.601V97.082h8.26v1.651h-6.432v5.461h6.034v1.653h-6.034v6.102h6.475v1.652zM201.537 97.082h1.826v11.869c-.023 1.3.199 3.392 3.127 3.392 2.931 0 3.149-2.092 3.129-3.392V97.082h1.829v12.531c0 2.952-1.961 4.383-4.958 4.383-2.995 0-4.953-1.431-4.953-4.383V97.082ZM223.141 97.082h1.83v16.519h-2.995l-4.628-13.22a12.97 12.97 0 0 1-.614-2.487h-.046c.021.839.046 1.697.046 2.534v13.173h-1.83V97.082h2.973l4.691 13.522c.201.504.355 1.036.573 1.805h.045a46.485 46.485 0 0 1-.045-1.848V97.082ZM228.825 113.601h1.828V97.082h-1.828zM242.767 97.082h2.027l-4.758 16.52h-2.268l-4.735-16.52h2.023l3.812 15.196h.043zM246.665 113.601V97.082h8.26v1.651h-6.432v5.461h6.037v1.653h-6.037v6.102h6.477v1.652zM259.774 98.733h2.574c1.232 0 3.456.065 3.501 2.906.044 2.886-2.333 3.018-3.194 3.04h-2.881v-5.946Zm0 7.597h3.189c2.159 0 2.821 1.41 2.821 3.063 0 1.098.176 3.148.575 4.208h2.134v-.376c-.442 0-.574-.728-.637-1.038a41.032 41.032 0 0 1-.354-3.678c-.263-2.199-.795-2.886-2.931-3.083v-.041c1.92-.268 3.106-1.651 3.171-3.592.114-3.812-2.09-4.711-5.55-4.711h-4.249v16.519h1.831v-7.271ZM278.317 101.419c.13-1.717-.793-3.018-2.623-3.018-2.664 0-2.952 1.674-2.952 2.954 0 1.143.51 1.847 1.565 2.247.882.327 1.741.658 2.625.987 3.124 1.168 3.698 2.27 3.698 4.451 0 3.127-1.963 4.956-5.131 4.956-1.634 0-3.571-.464-4.519-2.621-.353-.814-.329-2.136-.353-3.018h1.833c-.092 2.447.369 3.986 3.123 3.986 1.856 0 3.152-.945 3.152-2.882 0-2.514-1.014-2.537-2.687-3.176-.903-.353-2.354-.812-3.238-1.275-1.566-.795-1.961-2.115-1.961-3.745 0-2.732 1.916-4.515 4.603-4.515 3.018 0 4.87 1.563 4.695 4.669h-1.83ZM283.91 113.601h1.83V97.082h-1.83zM288.205 97.082h10.374v1.651h-4.272v14.868h-1.828V98.733h-4.274zM305.011 105.362l3.877-8.28h2.027l-5 10.108v6.411h-1.83v-6.41l-4.955-10.109h2.026zM150.69 84.262h150.641v-1.349h-150.64z">
+                    </path>
+                  </g>
+                </svg>
+              </span>
+            </a>
+            <div id="style-POoMN" class="style-POoMN">
+              <nav class="header-links">
+                <ul>
+                  <li>
+                    <a href="https://www.winona.edu/admissions/discover/winona/" class="header-links__link">
+                      Winona Campus
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.winona.edu/admissions/discover/rochester/" class="header-links__link">
+                      Rochester Campus
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="header-locations style-Y1iD3" id="style-Y1iD3">
+                <ul>
+                  <li>
+                    <button class="header-locations__parent" data-popup="" aria-expanded="false">
+                      <strong>
+                        Info For
+                      </strong>
+                    </button>
+                    <ul class="header-locations__sublist" data-select="">
+                      <li>
+                        <a href="/admissions/admitted-students">
+                          Admitted Students
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/alumni/">
+                          Alumni
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/community/">
+                          Community Members
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/admissions/counselors">
+                          Counselors &amp; Advisors
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/current-students/">
+                          Current Students
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/faculty-staff/">
+                          Faculty &amp; Staff
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/admissions/families">
+                          Parents &amp; Families
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <nav class="header-links">
+              <ul>
+                <li>
+                  <a href="/request-info/" class="header-links__cta">
+                    Request Info
+                  </a>
+                </li>
+                <li>
+                  <a href="/admissions/visit/" class="header-links__cta">
+                    Visit
+                  </a>
+                </li>
+                <li>
+                  <a href="/admissions/apply/" class="header-links__cta">
+                    Apply
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div> 
+      </div> 
+      <!--Desktop Header Main Nav-->
+      <div class="header-main desktop-only">
+        <div class="header-main__container">
+          <nav class="header-nav">
+            <ul>
+              <li>
+                <button class="header-nav__parent" data-popup="" aria-expanded="false">
+                  About
+                </button>
+                <ul class="header-nav__sublist" data-select="">
+                  <li>
+                    <a href="/about/" class="highlighted">
+                      About Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/leadership/">
+                      Leadership
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/history/">
+                      History
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/mission/">
+                      Mission
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/accreditation/">
+                      Accreditation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/safety-security/">
+                      Safety &amp; Security
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/news-events/">
+                      News &amp; Events
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/employment/">
+                      Employment
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button class="header-nav__parent" data-popup="" aria-expanded="false">
+                  Academics
+                </button>
+                <ul class="header-nav__sublist" data-select="">
+                  <li>
+                    <a href="/academics/" class="highlighted">
+                      Academics Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/programs/">
+                      Majors &amp; Programs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/colleges/">
+                      Colleges
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/graduate-studies/">
+                      Graduate Studies
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/summer-winter-sessions/">
+                      Summer &amp; Winter Sessions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/adult-continuing-education/">
+                      Adult &amp; Continuing Education
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/research/">
+                      Research
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/study-abroad/">
+                      Study Abroad
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/library/">
+                      Library
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button class="header-nav__parent" data-popup="" aria-expanded="false">
+                  Admissions
+                </button>
+                <ul class="header-nav__sublist" data-select="">
+                  <li>
+                    <a href="/admissions/" class="highlighted">
+                      Admissions Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admissions/discover/">
+                      Discover
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admissions/apply/">
+                      Apply
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admissions/afford/">
+                      Cost &amp; Afford
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admissions/visit/">
+                      Visit
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admissions/contact/">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button class="header-nav__parent" data-popup="" aria-expanded="false">
+                  Financial Aid
+                </button>
+                <ul class="header-nav__sublist" data-select="">
+                  <li>
+                    <a href="/financial-aid/" class="highlighted">
+                      Financial Aid Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/financial-aid/afford/paying-for-college/">
+                      Paying for College
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/financial-aid/cost/">
+                      Cost of Attendance
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/financial-aid/apply/">
+                      Apply for Financial Aid
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/financial-aid/receive-funds/">
+                      Receive Your Funds
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/financial-aid/keep-award/">
+                      Keep Your Aid Award
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/financial-aid/consumer-info/">
+                      Consumer Information
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button class="header-nav__parent" data-popup="" aria-expanded="false">
+                  Student Life
+                </button>
+                <ul class="header-nav__sublist" data-select="">
+                  <li>
+                    <a href="/student-life/" class="highlighted">
+                      Student Life Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/clubs/">
+                      Clubs &amp; Activities
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/housing-dining/">
+                      Housing &amp; Dining
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/entertainment/">
+                      Arts &amp; Entertainment
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/wellness/">
+                      Health &amp; Wellness
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://winonastatewarriors.com/" target="_blank">
+                      Athletics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/support/">
+                      Support &amp; Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/winona/">
+                      Life in Winona
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/rochester/">
+                      Life in Rochester
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <form id="searchform" method="get" action="https://www.winona.edu/" class="header-search">
+            <input id="headerSearch" class="header-search__input" type="text" placeholder="Search WSU" name="q" value="">
+            <button class="header-search__button">
+            </button>
+          </form>
+        </div>
+      </div>
+      <!--Mobile Header Main Nav-->
+      <div class="header-mobile mobile-only header-mobile--pinned"> 
+        <div class="header-mobile__container">
+          <button class="header-mobile__menu-button toggle-menu-mobile" data-popup="" aria-expanded="false">
+            <span class="screen-reader-text">
+              Menu
+            </span>
+          </button>
+          <a href="/" class="header-mobile__logo">
+            <span class="screen-reader-text">
+              Winona State University
+            </span>
+            <span class="svg svg--logo-full header-mobile__logo">
+              <svg viewBox="0 0 365 117" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#FEFEFE" fill-rule="evenodd">
+                  <path d="M18.168 5.256c1.312 2.755 3.773 4.496 6.394 5.902 6.5 3.483 14.515 5.632 17.564 12.924 2.48 5.92.93 12.662-1.848 18.208-.796 1.587-2.124 3.608-3.997 3.894 2.578-4.729 1.06-10.472-3.3-13.735-5.946-4.457-11.704-7.725-15.684-14.154-3.207-5.174-6.408-13.779.041-17.41-.149 1.536.178 2.992.83 4.371">
+                  </path>
+                  <path d="M46.254 23.895c-.763-2.543-1.768-4.958-2.04-7.631-.304-2.968.934-6.017 3.62-7.434.231 1.824-.104 3.61.815 5.296 1.92 3.526 4.695 6.034 6.576 9.592 2.257 4.256 1.957 9.563-1.692 12.756-3.883 3.394-8.693 5.493-11.5 9.876-1.23-2.282-.41-4.817.56-6.953 2.195-4.825 5.347-9.865 3.661-15.502M27.411 32.605c2.675 1.094 5.193 2.405 7.02 4.802 1.838 2.41 1.998 5.407 1.221 8.188-1.507-1.66-2.978-3.386-5.168-4.126-2.752-.927-5.488-1.418-8.005-2.872-2.45-1.408-4.198-3.398-5.655-5.877-1.776-3.026-2.53-7.374.35-9.835-.447 2.369-.243 5.257 1.915 6.572 2.572 1.567 5.543 2.015 8.322 3.148M37.5 47.429c4.599 0 9.136.018 13.747.016.008 2.015-.027 3.834 0 5.942-4.7 1.613-9.697 3.299-14.308 5.143-5.026-2.095-10.453-3.452-15.478-5.546-.024-1.964.025-3.483 0-5.54 5.477 0 10.968-.015 16.039-.015M17.681 59.026c1.801 0 3.046 0 4.658-.01-2.485 5.717-3.439 12.01-3.846 18.16-.516 7.764-1.053 15.753 1.287 23.308.791 2.56 4.188 4.204 6.751 2.238 1.867-1.434 2.516-3.488 2.574-5.606.341-12.546.842-25.178.906-37.948 4.827-.014 9.02.035 13.934 0 .315 12.786.183 25.694.6 38.542.078 2.332 1.59 5.006 3.805 5.62 3.68 1.03 6.484-3.025 6.73-6.36.93-12.659.684-25.943-4.074-37.895 7.675 0 14.311.044 21.466 0-2.563 18.976-5.866 38.243-8.537 57.201-6.492-2.483-12.832-5.505-19.867-6.25-11.674-1.235-23.505.944-33.819 6.474C6.57 97.43 4.02 78.171.884 59.016c5.675-.012 11.333.01 16.797.01M164.631 28.586v2.906c-4.364.565-5.09.969-6.22 4.682-1.212 3.879-3.476 11.55-5.817 20.273l-7.51 28.03h-10.259l-9.934-37.8h-.244l-9.531 37.8h-10.177l-7.107-26.978c-2.263-8.402-4.283-16.235-6.059-22.132-.889-2.906-1.453-3.472-5.492-3.875v-2.906h23.183v2.906l-3.719.565c-.887.083-1.369.404-1.612.888-.163.485-.083 1.213.162 2.18l9.207 36.51h.162l10.016-41.841h8.965l10.661 41.84h.323l4.606-18.173c2.503-10.098 3.713-16.074 4.036-18.094.323-1.937.162-2.99-1.533-3.227l-4.604-.648v-2.906h18.497Z">
+                  </path>
+                  <path d="M178.814 64.507c0 3.07.482 3.37 4.76 3.55v2.288h-19.15v-2.288c4.275-.18 4.755-.48 4.755-3.55v-29.99c0-3.07-.48-3.37-4.755-3.554v-2.287h19.15v2.287c-4.278.184-4.76.484-4.76 3.554v29.99ZM201.336 28.675c6.204 9.575 12.587 19.09 18.968 28.665h.239V43.851c0-4.938-.058-7.225-.3-9.393-.181-2.108-.843-3.07-2.529-3.193l-3.373-.303v-2.287h14.511v2.287l-2.105.303c-1.386.182-1.988 1.085-2.169 3.193-.24 2.106-.3 4.455-.3 9.393v26.494h-6.623a2647.2 2647.2 0 0 0-21.859-33.597h-.239v18.424c0 4.937.058 7.227.299 9.393.18 2.108.842 3.071 2.528 3.19l3.372.301v2.29h-14.512v-2.29l2.108-.3c1.383-.18 1.989-1.083 2.166-3.19.242-2.107.305-4.457.305-9.394V34.517c0-3.07-.482-3.37-4.758-3.555v-2.287h14.271ZM253.184 68.48c-8.731 0-9.814-10.779-9.938-18.969.124-7.709 1.207-18.969 9.938-18.969 8.729 0 9.814 11.26 9.935 18.969-.121 8.19-1.206 18.969-9.935 18.969m0-40.706c-13.85 0-20.593 8.128-20.593 21.737 0 13.61 6.743 21.741 20.593 21.741 13.847 0 20.594-8.131 20.594-21.741 0-13.609-6.747-21.737-20.594-21.737M292.031 28.675c6.204 9.575 12.585 19.09 18.97 28.665h.239V43.851c0-4.938-.06-7.225-.302-9.393-.179-2.108-.843-3.07-2.529-3.193l-3.371-.303v-2.287h14.511v2.287l-2.109.303c-1.385.182-1.984 1.085-2.163 3.193-.242 2.106-.306 4.455-.306 9.393v26.494h-6.623a2646.984 2646.984 0 0 0-21.857-33.597h-.237v18.424c0 4.937.056 7.227.296 9.393.179 2.108.845 3.071 2.531 3.19l3.371.301v2.29h-14.511v-2.29l2.107-.3c1.384-.18 1.988-1.083 2.167-3.19.242-2.107.302-4.457.302-9.394V34.517c0-3.07-.481-3.37-4.757-3.555v-2.287h14.271Z">
+                  </path>
+                  <path d="m326.13 60.73 6.541-20.922h.245l6.298 20.922H326.13Zm1.13 23.747v-3.07l-4.843-.403c-1.782-.163-1.859-1.132-1.452-2.906.965-4.366 2.418-8.725 3.872-13.49h15.67l4.2 13.41c.564 1.692.325 2.744-1.373 2.906l-4.685.483v3.07h25.526v-3.07c-4.2-.077-5.252-.566-6.301-3.876l-15.913-48.945h-10.178l-9.366 27.218c-2.909 8.32-5.575 16.477-7.512 21.403-1.295 3.393-2.183 3.956-6.545 4.2v3.07h18.9ZM147.394 101.419c.132-1.72-.794-3.018-2.62-3.018-2.665 0-2.953 1.674-2.953 2.952 0 1.145.51 1.849 1.566 2.245.878.331 1.74.662 2.619.991 3.128 1.168 3.7 2.27 3.7 4.451 0 3.127-1.96 4.954-5.128 4.954-1.633 0-3.57-.462-4.519-2.621-.35-.814-.33-2.136-.35-3.018h1.828c-.092 2.449.374 3.988 3.125 3.988 1.85 0 3.151-.947 3.151-2.882 0-2.514-1.014-2.537-2.686-3.176-.904-.353-2.357-.812-3.238-1.277-1.566-.793-1.96-2.113-1.96-3.743 0-2.734 1.915-4.517 4.604-4.517 3.013 0 4.866 1.563 4.689 4.671h-1.828ZM151.161 97.078h10.374v1.653h-4.272v14.866h-1.828V98.731h-4.274zM168.914 107.19h-4.361l2.182-8.789h.045l2.134 8.789Zm-8.041 6.411h2.027l1.213-4.759h5.221l1.298 4.759h2.027l-4.646-16.519h-2.424l-4.716 16.519ZM172 97.082h10.373v1.651h-4.27v14.868h-1.829V98.733H172zM184.313 113.601V97.082h8.26v1.651h-6.432v5.461h6.034v1.653h-6.034v6.102h6.475v1.652zM201.537 97.082h1.826v11.869c-.023 1.3.199 3.392 3.127 3.392 2.931 0 3.149-2.092 3.129-3.392V97.082h1.829v12.531c0 2.952-1.961 4.383-4.958 4.383-2.995 0-4.953-1.431-4.953-4.383V97.082ZM223.141 97.082h1.83v16.519h-2.995l-4.628-13.22a12.97 12.97 0 0 1-.614-2.487h-.046c.021.839.046 1.697.046 2.534v13.173h-1.83V97.082h2.973l4.691 13.522c.201.504.355 1.036.573 1.805h.045a46.485 46.485 0 0 1-.045-1.848V97.082ZM228.825 113.601h1.828V97.082h-1.828zM242.767 97.082h2.027l-4.758 16.52h-2.268l-4.735-16.52h2.023l3.812 15.196h.043zM246.665 113.601V97.082h8.26v1.651h-6.432v5.461h6.037v1.653h-6.037v6.102h6.477v1.652zM259.774 98.733h2.574c1.232 0 3.456.065 3.501 2.906.044 2.886-2.333 3.018-3.194 3.04h-2.881v-5.946Zm0 7.597h3.189c2.159 0 2.821 1.41 2.821 3.063 0 1.098.176 3.148.575 4.208h2.134v-.376c-.442 0-.574-.728-.637-1.038a41.032 41.032 0 0 1-.354-3.678c-.263-2.199-.795-2.886-2.931-3.083v-.041c1.92-.268 3.106-1.651 3.171-3.592.114-3.812-2.09-4.711-5.55-4.711h-4.249v16.519h1.831v-7.271ZM278.317 101.419c.13-1.717-.793-3.018-2.623-3.018-2.664 0-2.952 1.674-2.952 2.954 0 1.143.51 1.847 1.565 2.247.882.327 1.741.658 2.625.987 3.124 1.168 3.698 2.27 3.698 4.451 0 3.127-1.963 4.956-5.131 4.956-1.634 0-3.571-.464-4.519-2.621-.353-.814-.329-2.136-.353-3.018h1.833c-.092 2.447.369 3.986 3.123 3.986 1.856 0 3.152-.945 3.152-2.882 0-2.514-1.014-2.537-2.687-3.176-.903-.353-2.354-.812-3.238-1.275-1.566-.795-1.961-2.115-1.961-3.745 0-2.732 1.916-4.515 4.603-4.515 3.018 0 4.87 1.563 4.695 4.669h-1.83ZM283.91 113.601h1.83V97.082h-1.83zM288.205 97.082h10.374v1.651h-4.272v14.868h-1.828V98.733h-4.274zM305.011 105.362l3.877-8.28h2.027l-5 10.108v6.411h-1.83v-6.41l-4.955-10.109h2.026zM150.69 84.262h150.641v-1.349h-150.64z">
+                  </path>
+                </g>
+              </svg>
+            </span>
+          </a>
+          <button class="header-mobile__search-button toggle-search-mobile" data-popup="" aria-expanded="false" data-header-search="">
+            <span class="screen-reader-text">
+              Toggle Search
+            </span>
+          </button>
+          <nav class="header-mobile-nav">
+            <ul>
+              <li class="header-mobile-nav__parent-wrap">
+                <button class="header-mobile-nav__parent" data-popup="" aria-expanded="false">
+                  About
+                </button>
+                <ul class="header-mobile-nav__sublist" data-select="">
+                  <li>
+                    <a href="/about/" class="highlighted">
+                      About Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/leadership/">
+                      Leadership
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/history/">
+                      History
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/mission/">
+                      Mission
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/accreditation/">
+                      Accreditation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/safety-security/">
+                      Safety &amp; Security
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/news-events/">
+                      News &amp; Events
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/employment/">
+                      Employment
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header-mobile-nav__parent-wrap">
+                <button class="header-mobile-nav__parent" data-popup="" aria-expanded="false">
+                  Academics
+                </button>
+                <ul class="header-mobile-nav__sublist" data-select="">
+                  <li>
+                    <a href="/academics/" class="highlighted">
+                      Academics Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/programs/">
+                      Majors &amp; Programs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/colleges/">
+                      Colleges
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/graduate-studies/">
+                      Graduate Studies
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/summer-winter-sessions/">
+                      Summer &amp; Winter Sessions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/adult-continuing-education/">
+                      Adult &amp; Continuing Education
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/research/">
+                      Research
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/academics/study-abroad/">
+                      Study Abroad
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/library/">
+                      Library
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header-mobile-nav__parent-wrap">
+                <button class="header-mobile-nav__parent" data-popup="" aria-expanded="false">
+                  Admissions
+                </button>
+                <ul class="header-mobile-nav__sublist" data-select="">
+                  <li>
+                    <a href="/admissions/" class="highlighted">
+                      Admissions Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admissions/discover/">
+                      Discover
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admissions/apply/">
+                      Apply
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admissions/afford/">
+                      Cost &amp; Afford
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admissions/visit/">
+                      Visit
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admissions/contact/">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header-mobile-nav__parent-wrap">
+                <button class="header-mobile-nav__parent" data-popup="" aria-expanded="false">
+                  Financial Aid
+                </button>
+                <ul class="header-mobile-nav__sublist" data-select="">
+                  <li>
+                    <a href="/financial-aid/" class="highlighted">
+                      Financial Aid Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/financial-aid/afford/paying-for-college/">
+                      Paying for College
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/financial-aid/cost/">
+                      Cost of Attendance
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/financial-aid/apply/">
+                      Apply for Financial Aid
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/financial-aid/receive-funds/">
+                      Receive Your Funds
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/financial-aid/keep-award/">
+                      Keep Your Aid Award
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/financial-aid/consumer-info/">
+                      Consumer Information
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header-mobile-nav__parent-wrap">
+                <button class="header-mobile-nav__parent" data-popup="" aria-expanded="false">
+                  Student Life
+                </button>
+                <ul class="header-mobile-nav__sublist" data-select="">
+                  <li>
+                    <a href="/student-life/" class="highlighted">
+                      Student Life Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/clubs/">
+                      Clubs &amp; Activities
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/housing-dining/">
+                      Housing &amp; Dining
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/entertainment/">
+                      Arts &amp; Entertainment
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/wellness/">
+                      Health &amp; Wellness
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://winonastatewarriors.com/" target="_blank">
+                      Athletics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/support/">
+                      Support &amp; Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/winona/">
+                      Life in Winona
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/student-life/rochester/">
+                      Life in Rochester
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <nav class="header-links">
+              <ul>
+                <li>
+                  <a href="/request-info/" class="header-links__cta">
+                    Request Info
+                  </a>
+                </li>
+                <li>
+                  <a href="/admissions/visit/" class="header-links__cta">
+                    Visit
+                  </a>
+                </li>
+                <li>
+                  <a href="/admissions/apply/" class="header-links__cta">
+                    Apply
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="header-mobile-nav-secondary">
+              <li class="header-mobile-nav__parent-wrap">
+                <a href="/admissions/discover/winona/" class="header-mobile-nav__link">
+                  Winona Campus
+                </a>
+              </li>
+              <li class="header-mobile-nav__parent-wrap">
+                <a href="/admissions/discover/rochester/" class="header-mobile-nav__link">
+                  Rochester Campus
+                </a>
+              </li>
+              <li class="header-mobile-nav__parent-wrap">
+                <button class="header-mobile-nav__parent" data-popup="" aria-expanded="false">
+                  Info For
+                </button>
+                <ul class="header-mobile-nav__sublist" data-select="">
+                  <li>
+                    <a href="/admissions/admitted-students">
+                      Admitted Students
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/alumni/">
+                      Alumni
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/community/">
+                      Community Members
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admissions/counselors">
+                      Counselors &amp; Advisors
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/current-students/">
+                      Current Students
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/faculty-staff/">
+                      Faculty &amp; Staff
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admissions/families">
+                      Parents &amp; Families
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <form id="searchform" method="get" action="https://www.winona.edu/" class="header-mobile-search">
+            <label for="search-mobile" class="screen-reader-text">
+              Search Winona State
+            </label>
+            <input id="headerSearch" class="header-mobile-search__input" type="text" placeholder="Search WSU" name="q" value="">
+            <button class="header-mobile-search__button" value="Search">
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Container for the search bar and suggestions -->
+      <div id="suggestions-container">
+          <input type="text" id="searchInput" placeholder="Search..." autocomplete="off">
+          <div id="suggestions"></div>
+      </div>
+      <!-- Container for displaying tree details -->
+      
+        <div id="treeDetailsSearch"> </div>
+        
+
+        <!--beginning of test code for popup-->
+
+        <div class="form-popup" id="myForm">
+          <form action="" class="form-container">
+              
+              <div id="currentTree"></div>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+          </div>
+        
+          <!--ending of test code for popup-->
+        
+          <div class="treeButtons">
+              <button id="collapsible" onclick="unhide('contentA')">A</button>
+              <div id="contentA"></div>
+              <button id="collapsible" onclick="unhide('contentB')">B</button>
+              <div id="contentB"></div>
+              <button id="collapsible" onclick="unhide('contentC')">C</button>
+              <div id="contentC"></div>
+              <button id="collapsible" onclick="unhide('contentD')">D</button>
+              <div id="contentD"></div>
+              <button id="collapsible" onclick="unhide('contentE')">E</button>
+              <div id="contentE"></div>
+              <button id="collapsible" onclick="unhide('contentF')">F</button>
+              <div id="contentF"></div>
+              <button id="collapsible" onclick="unhide('contentG')">G</button>
+              <div id="contentG"></div>
+              <button id="collapsible" onclick="unhide('contentH')">H</button>
+              <div id="contentH"></div>
+              <button id="collapsible" onclick="unhide('contentI')">I</button>
+              <div id="contentI"></div>
+              <button id="collapsible" onclick="unhide('contentJ')">J</button>
+              <div id="contentJ"></div>
+              <button id="collapsible" onclick="unhide('contentK')">K</button>
+              <div id="contentK"></div>
+              <button id="collapsible" onclick="unhide('contentL')">L</button>
+              <div id="contentL"></div>
+              <button id="collapsible" onclick="unhide('contentM')">M</button>
+              <div id="contentM"></div>
+              <button id="collapsible" onclick="unhide('contentN')">N</button>
+              <div id="contentN"></div>
+              <button id="collapsible" onclick="unhide('contentO')">O</button>
+              <div id="contentO"></div>
+              <button id="collapsible" onclick="unhide('contentP')">P</button>
+              <div id="contentP"></div>
+              <button id="collapsible" onclick="unhide('contentQ')">Q</button>
+              <div id="contentQ"></div>
+              <button id="collapsible" onclick="unhide('contentR')">R</button>
+              <div id="contentR"></div>
+              <button id="collapsible" onclick="unhide('contentS')">S</button>
+              <div id="contentS"></div>
+              <button id="collapsible" onclick="unhide('contentT')">T</button>
+              <div id="contentT"></div>
+              <button id="collapsible" onclick="unhide('contentU')">U</button>
+              <div id="contentU"></div>
+              <button id="collapsible" onclick="unhide('contentV')">V</button>
+              <div id="contentV"></div>
+              <button id="collapsible" onclick="unhide('contentW')">W</button>
+              <div id="contentW"></div>
+              <button id="collapsible" onclick="unhide('contentX')">X</button>
+              <div id="contentX"></div>
+              <button id="collapsible" onclick="unhide('contentY')">Y</button>
+              <div id="contentY"></div>
+              <button id="collapsible" onclick="unhide('contentZ')">Z</button>
+              <div id="contentZ"></div>
+  
+
+      </div>
+    </main>
+    
+    <footer id="footer" class="footer footer--main">
+      <div class="footer-top">
+        <div class="footer-top__container footer-top__container--center">
+          <div class="footer-block desktop-only">
+            <nav class="footer-social-nav">
+              <ul>
+                <li>
+                  <a href="https://www.tiktok.com/@winonastateu">
+                    <span class="svg svg--social-tiktok footer-social-nav__svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
+                        <g data-name="Layer 2">
+                          <path class="cls-1" d="M23.79 0H3.21A3.21 3.21 0 000 3.21v20.58A3.21 3.21 0 003.21 27h20.58A3.21 3.21 0 0027 23.79V3.21A3.21 3.21 0 0023.79 0m-2.57 11.78h-.45a4.82 4.82 0 01-4-2.18V17a5.48 5.48 0 11-5.48-5.48h.34v2.7a1.86 1.86 0 00-.34 0 2.8 2.8 0 000 5.6 2.86 2.86 0 002.91-2.76V4.46h2.58a4.83 4.83 0 004.44 4.3v3" data-name="Layer 1">
+                          </path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/WinonaStateU">
+                    <span class="svg svg--social-facebook footer-social-nav__svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                        <path fill-rule="evenodd" d="M25.525 12.762C25.525 5.714 19.81 0 12.762 0S0 5.714 0 12.762c0 6.37 4.667 11.65 10.768 12.608v-8.92h-3.24v-3.689h3.24v-2.81c0-3.199 1.905-4.966 4.82-4.966 1.397 0 2.857.25 2.857.25v3.14h-1.609c-1.585 0-2.08.984-2.08 1.993v2.394h3.54l-.566 3.69h-2.974v8.918c6.102-.958 10.769-6.238 10.769-12.608">
+                        </path>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/winonastateu/">
+                    <span class="svg svg--social-instagram footer-social-nav__svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.99 23.99">
+                        <g data-name="Layer 2">
+                          <path class="cls-1" d="M12 0C8.74 0 8.33 0 7.05.07a8.71 8.71 0 00-2.91.56A6.07 6.07 0 00.63 4.14a8.71 8.71 0 00-.56 2.91C0 8.33 0 8.74 0 12s0 3.66.07 4.94a8.71 8.71 0 00.56 2.91A6 6 0 002 22a5.78 5.78 0 002.13 1.38 8.71 8.71 0 002.91.56C8.33 24 8.74 24 12 24s3.66 0 4.94-.07a8.71 8.71 0 002.91-.56 6.07 6.07 0 003.51-3.51 8.71 8.71 0 00.56-2.91c.08-1.29.08-1.7.08-4.95s0-3.67-.07-4.95a8.71 8.71 0 00-.56-2.91A5.78 5.78 0 0022 2 6 6 0 0019.85.63a8.71 8.71 0 00-2.91-.56C15.66 0 15.25 0 12 0zm0 2.16c3.2 0 3.58 0 4.84.07a6.68 6.68 0 012.23.41 3.75 3.75 0 011.38.9 3.75 3.75 0 01.9 1.38 6.68 6.68 0 01.41 2.23c.06 1.26.07 1.64.07 4.85s0 3.58-.07 4.84a6.68 6.68 0 01-.41 2.23 4 4 0 01-2.28 2.28 6.68 6.68 0 01-2.23.41c-1.26.06-1.64.07-4.84.07s-3.59 0-4.85-.07a6.68 6.68 0 01-2.23-.41 3.75 3.75 0 01-1.38-.9 3.75 3.75 0 01-.9-1.38 6.68 6.68 0 01-.41-2.23c-.06-1.26-.07-1.64-.07-4.84s0-3.59.07-4.85a6.68 6.68 0 01.41-2.23 3.75 3.75 0 01.9-1.38 3.75 3.75 0 011.38-.9 6.68 6.68 0 012.23-.41c1.26-.06 1.64-.07 4.85-.07zM12 16a4 4 0 114-4 4 4 0 01-4 4zm0-10.16A6.16 6.16 0 1018.16 12 6.15 6.15 0 0012 5.84zm7.84-.25a1.44 1.44 0 11-1.44-1.44 1.44 1.44 0 011.44 1.44" data-name="Layer 1">
+                          </path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/winonastateu">
+                    <span class="svg svg--social-twitter footer-social-nav__svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.6 20.8">
+                        <g data-name="Layer 2">
+                          <path class="cls-1" d="M23 5.18v.68A14.85 14.85 0 018.05 20.8a14.92 14.92 0 01-8-2.36 10.36 10.36 0 001.25.08 10.49 10.49 0 006.52-2.26 5.24 5.24 0 01-4.9-3.64 5.28 5.28 0 002.37-.09A5.27 5.27 0 011 7.38v-.07A5.25 5.25 0 003.41 8a5.26 5.26 0 01-1.63-7 15 15 0 0010.83 5.45 5.26 5.26 0 019-4.79A10.8 10.8 0 0024.89.38a5.26 5.26 0 01-2.31 2.91 10.93 10.93 0 003-.83A10.92 10.92 0 0123 5.18" data-name="Layer 1">
+                          </path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.snapchat.com/add/winonastateu">
+                    <span class="svg svg--social-snapchat footer-social-nav__svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
+                        <g data-name="Layer 2">
+                          <path class="cls-1" d="M26.9 19.75a1.81 1.81 0 00-.95-1 1.06 1.06 0 00-.21-.11l-.37-.19a8 8 0 01-2.94-2.57 5.06 5.06 0 01-.51-.91.43.43 0 010-.35.58.58 0 01.17-.18l.59-.39.63-.42a3.49 3.49 0 001.11-1.21 2.42 2.42 0 00.11-2 2.31 2.31 0 00-2.24-1.49 2.88 2.88 0 00-.65.07h-.17c0-.64 0-1.3-.07-2a7.12 7.12 0 00-1.82-4.47 7.42 7.42 0 00-1.85-1.43A8.35 8.35 0 0013.49 0a8.25 8.25 0 00-4.22 1.1 7.29 7.29 0 00-1.85 1.51A7.17 7.17 0 005.6 7.08a18.49 18.49 0 00-.06 2L5.36 9a2.79 2.79 0 00-.64-.07 2.33 2.33 0 00-2.25 1.49 2.46 2.46 0 00.12 2 3.39 3.39 0 001.11 1.19l.63.42.57.38a.58.58 0 01.19.19.44.44 0 010 .37 6 6 0 01-.5.89 8.13 8.13 0 01-2.86 2.52c-.67.35-1.34.62-1.63 1.37a1.74 1.74 0 00.46 1.84 3 3 0 00.69.54 8 8 0 001.69.68 1.19 1.19 0 01.34.16c.2.17.17.44.44.83a2 2 0 00.49.52 3.3 3.3 0 001.85.44 6.77 6.77 0 012.05.31 4.53 4.53 0 011.05.56A7.48 7.48 0 0013.49 27a7.56 7.56 0 004.34-1.38 5.27 5.27 0 011-.55 6.77 6.77 0 012.05-.31 3.3 3.3 0 001.85-.44 1.88 1.88 0 00.56-.63c.2-.33.19-.56.37-.72a1 1 0 01.32-.15 7.66 7.66 0 001.71-.69 2.87 2.87 0 00.72-.58 1.66 1.66 0 00.49-1.8zm-1.89 1c-1.15.64-1.92.57-2.51 1s-.21 1-.58 1.3-1.79 0-3.51.56c-1.43.48-2.33 1.86-4.9 1.86s-3.44-1.38-4.89-1.86c-1.73-.58-3.06-.24-3.52-.56s-.07-1-.57-1.3-1.37-.33-2.52-1c-.74-.41-.31-.66-.07-.78 4.17-2.06 4.84-5.23 4.87-5.47a.75.75 0 00-.23-.8c-.3-.28-1.62-1.11-2-1.37-.6-.43-.87-.86-.67-1.39a.82.82 0 01.83-.51 1.86 1.86 0 01.33 0c.67.15 1.31.48 1.69.58h.13c.2 0 .27-.1.26-.34a24.76 24.76 0 010-3.53 5.64 5.64 0 011.42-3.5 6.4 6.4 0 014.94-2.09 6.45 6.45 0 015 2.08 5.59 5.59 0 011.39 3.59 23.49 23.49 0 010 3.54c0 .24.05.33.25.33a.34.34 0 00.14 0c.38-.09 1-.43 1.69-.58a1.23 1.23 0 01.33 0 .83.83 0 01.83.5c.2.53-.07 1-.68 1.39-.36.26-1.68 1.1-2 1.38a.74.74 0 00-.23.8c0 .23.69 3.41 4.87 5.46.23.07.64.33-.1.74z" data-name="Layer 1">
+                          </path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/user/WinonaU">
+                    <span class="svg svg--social-youtube footer-social-nav__svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.39 23.52">
+                        <g data-name="Layer 2">
+                          <path class="cls-1" d="M13.82 0h12.02l.83.06.77.06h.49l.45.05h.21l.4.06a8 8 0 01.8.16 4.19 4.19 0 012.95 3A15.5 15.5 0 0133 5.41l.06.48.05.5v1.02l.05.75v8.98l-.05.5-.06.49a15.3 15.3 0 01-.33 1.73 4.16 4.16 0 01-2.95 3l-.29.07-.33.06h-.19l-.4.06-.43.05-.48.05-.5.05h-.53l-.83.06h-1.46l-1.1.05H8.8l-.88-.05-.85-.05-.8-.06-.5-.05-.47-.05-.44-.05h-.59l-.33-.06-.29-.07a4.16 4.16 0 01-2.95-3 15.1 15.1 0 01-.36-2l-.07-.57v-3.34L0 13V7.67a2.64 2.64 0 010-.29v-.87L.3 6a17.09 17.09 0 01.4-2.33 4.19 4.19 0 013-3 8 8 0 01.8-.16l.4-.06h.9l.71-.13L7 .28l.88-.06h5.94zm-.54 6.8v9.93l8.73-5z" data-name="Layer 1">
+                          </path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/school/winona-state-university/">
+                    <span class="svg svg--social-linkedin footer-social-nav__svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g data-name="Layer 2">
+                          <path class="cls-1" d="M21.83 0H2.17A2.17 2.17 0 000 2.17v19.66A2.17 2.17 0 002.17 24h19.66A2.17 2.17 0 0024 21.83V2.17A2.17 2.17 0 0021.83 0zM7.43 20.72a.64.64 0 01-.64.63H4.11a.64.64 0 01-.64-.63V9.45a.64.64 0 01.64-.63h2.68a.64.64 0 01.64.63zm-2-13A2.55 2.55 0 118 5.2a2.55 2.55 0 01-2.55 2.55zm16 13a.58.58 0 01-.58.58H18a.58.58 0 01-.58-.58v-5.23c0-.79.23-3.46-2.06-3.46-1.78 0-2.14 1.83-2.21 2.64v6.1a.58.58 0 01-.58.58H9.79a.58.58 0 01-.58-.58V9.4a.58.58 0 01.58-.58h2.79a.58.58 0 01.58.58v1a4 4 0 013.73-1.75c4.62 0 4.59 4.32 4.59 6.69v5.45z" data-name="Layer 1">
+                          </path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://blogs.winona.edu/">
+                    <span class="svg svg--social-wordpress footer-social-nav__svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
+                        <g data-name="Layer 2">
+                          <path class="cls-1" d="M24.15 7.68A12.12 12.12 0 0119.6 24l3.71-10.72a11.47 11.47 0 00.92-4.35 9.57 9.57 0 00-.08-1.24zm-9 .13c.73 0 1.39-.12 1.39-.12a.5.5 0 00-.08-1s-2 .16-3.23.16-3.2-.16-3.2-.16a.5.5 0 00-.07 1s.61.08 1.27.12L13.14 13l-2.66 8L6.06 7.81c.73 0 1.39-.12 1.39-.12a.5.5 0 00-.08-1s-2 .16-3.23.16h-.78a12.13 12.13 0 0118.34-2.3h-.16a2.1 2.1 0 00-2 2.15 5.74 5.74 0 001.19 2.85 6.42 6.42 0 011 3.35 14.79 14.79 0 01-.92 3.92l-1.21 4.05zM13.5 25.64a12.16 12.16 0 01-3.43-.5l3.64-10.58 3.73 10.22.09.17a12.22 12.22 0 01-4 .69zM1.36 13.5a12.15 12.15 0 011.05-4.94L8.2 24.42A12.13 12.13 0 011.36 13.5zM13.5 0A13.5 13.5 0 1027 13.5 13.52 13.52 0 0013.5 0z" data-name="Layer 1">
+                          </path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-logo__wrapper">
+            <span class="screen-reader-text">
+              Winona State University
+            </span>
+            <span class="svg svg--logo-full-stacked footer-logo mobile-only">
+              <svg xmlns="http://www.w3.org/2000/svg" width="247" height="198" viewBox="0 0 247 198">
+                <g fill="#FFF" fill-rule="evenodd">
+                  <path d="M106.139781,4.0520653 C107.330554,6.60643616 109.561841,8.22101057 111.938733,9.52435808 C117.836084,12.756225 125.105051,14.7465821 127.872883,21.5079522 C130.121456,26.9965538 128.716597,33.2475933 126.194764,38.3916708 C125.475381,39.8608248 124.269981,41.7349815 122.569256,42 C124.908916,37.6170013 123.531981,32.2921676 119.57537,29.264161 C114.180657,25.1325902 108.959473,22.1018655 105.348592,16.1430259 C102.441138,11.3448315 99.536344,3.36641481 105.387819,0 C105.248863,1.42634329 105.546057,2.77521964 106.139781,4.0520653">
+                  </path>
+                  <path d="M132.445768 21.0541438C131.745746 18.6819345 130.823602 16.4293611 130.572537 13.9361486 130.29522 11.168799 131.43141 8.32283142 133.896294 7 134.108993 8.70361545 133.802061 10.3703147 134.645452 11.9426724 136.409642 15.2295838 138.957318 17.5696623 140.68516 20.8880208 142.757629 24.8599332 142.481659 29.8087583 139.129631 32.7866672 135.567597 35.9518917 131.147362 37.9118698 128.57007 42 127.439939 39.8704807 128.191789 37.5057914 129.084317 35.5129988 131.099572 31.0126375 133.99524 26.3119714 132.445768 21.0541438M114.6699 28.9885747C117.237416 30.0011619 119.65022 31.2123354 121.404794 33.4293184 123.169917 35.6585012 123.323223 38.4305771 122.577089 41 121.130532 39.4668861 119.71984 37.8693842 117.617164 37.1855151 114.978621 36.3288149 112.352034 35.873354 109.935714 34.5293377 107.587608 33.2266654 105.90828 31.3858443 104.512356 29.0929512 102.805601 26.2964756 102.082674 22.2745933 104.847799 20 104.416012 22.1898722 104.613622 24.8602827 106.683949 26.0768784 109.151605 27.5273044 112.001822 27.9400658 114.6699 28.9885747M123.540674 43C127.708641 43 131.822142 43.0145234 135.99808 43.0125429 136.008043 44.8286242 135.974832 46.4677845 135.99808 48.3677053 131.739779 49.8174016 127.211806 51.3383945 123.031883 53 118.478669 51.1106417 113.5608 49.8886982 109.006258 48.0039609 108.984339 46.2334302 109.028841 44.8669131 109.006258 43.0125429 113.969294 43.0125429 118.946279 43 123.540674 43M105.721935 54.0133265C107.406624 54.0133265 108.570678 54.0133265 110.079079 54.0025153 107.755086 59.2743572 106.861981 65.0732481 106.481966 70.744431 105.998372 77.9035139 105.493514 85.2707137 107.685119 92.2345182 108.426629 94.5927248 111.606685 96.1110315 114.003389 94.2987936 115.751871 92.9764411 116.357563 91.0817673 116.412439 89.1283073 116.731405 77.5602564 117.200594 65.9144995 117.263701 54.1437374 121.777241 54.1302233 125.700865 54.1775226 130.300834 54.1437374 130.596478 65.9307164 130.47095 77.8318893 130.862626 89.6749518 130.933965 91.8277444 132.35182 94.2913609 134.425442 94.8596279 137.868216 95.8049376 140.494026 92.068295 140.723133 88.9938422 141.593601 77.3224086 141.363809 65.077978 136.910632 54.057923 144.093197 54.057923 150.303773 54.0991409 157 54.057923 154.600553 71.5518972 151.510356 89.3168287 149.011446 106.795937 142.933944 104.505977 136.999805 101.718698 130.415388 101.032183 119.492347 99.8942977 108.417712 101.90249 98.7643614 107 95.3215869 89.41886 92.9344868 71.6633883 90 54.0025153 95.3106117 53.9930554 100.607504 54.0133265 105.721935 54.0133265M69 122 69 124.599633C65.1574975 125.106011 64.5182032 125.466634 63.5212005 128.789566 62.4541381 132.258937 60.4614799 139.122407 58.3994357 146.926096L51.7848614 172 42.7505345 172 34.0025091 138.184924 33.7876146 138.184924 25.3932557 172 16.4310094 172 10.1714489 147.867001C8.18013805 140.35003 6.40170072 133.34149 4.83748426 128.066267 4.05470237 125.466634 3.55552735 124.961625 0 124.599633L0 122 20.4156521 122 20.4156521 124.599633 17.1423843 125.106011C16.3589288 125.179915 15.934529 125.466634 15.7209818 125.899792 15.5781679 126.33295 15.6489012 126.985082 15.863122 127.852767L23.9725268 160.511387 24.1139934 160.511387 32.9354467 123.081185 40.8306306 123.081185 50.2192976 160.511387 50.5035782 160.511387 54.5589542 144.253244C56.7631386 135.220562 57.830201 129.873488 58.1144815 128.066267 58.3994357 126.33295 58.2572954 125.393414 56.7631386 125.179915L52.7097836 124.599633 52.7097836 122 69 122M82.7754654 153.814227C82.7754654 156.540578 83.2039626 156.808187 87 156.967802L87 159 70 159 70 156.967802C73.7960374 156.808187 74.2218183 156.540578 74.2218183 153.814227L74.2218183 127.187132C74.2218183 124.459422 73.7960374 124.193171 70 124.03084L70 122 87 122 87 124.03084C83.2039626 124.193171 82.7754654 124.459422 82.7754654 127.187132L82.7754654 153.814227M101.978528 122C107.618463 130.502359 113.422559 138.949702 119.226656 147.452061L119.445075 147.452061 119.445075 135.475539C119.445075 131.089876 119.390818 129.059036 119.171704 127.134153 119.006846 125.262249 118.405151 124.407802 116.87135 124.299128L113.804445 124.03084 113.804445 122 127 122 127 124.03084 125.085705 124.299128C123.825276 124.459422 123.278533 125.262249 123.113676 127.134153 122.895257 129.004699 122.839609 131.089876 122.839609 135.475539L122.839609 159 116.817093 159C110.300701 149.055677 103.675099 139.110675 96.9409837 129.166352L96.7218693 129.166352 96.7218693 145.525819C96.7218693 149.911482 96.7761262 151.943681 96.9952406 153.867205 97.1587069 155.737751 97.760402 156.594915 99.2942027 156.699514L102.360413 156.967802 102.360413 159 89.1627707 159 89.1627707 156.967802 91.0812389 156.699514C92.3388859 156.540578 92.8884109 155.737751 93.0511816 153.867205 93.270296 151.996659 93.3273353 149.911482 93.3273353 145.525819L93.3273353 127.187132C93.3273353 124.459422 92.8884109 124.193171 89 124.03084L89 122 101.978528 122M147.499656 156.57774C139.655461 156.57774 138.683097 147.156799 138.572461 139.998997 138.683097 133.261062 139.655461 123.419586 147.499656 123.419586 155.342477 123.419586 156.316216 133.261062 156.424791 139.998997 156.316216 147.156799 155.342477 156.57774 147.499656 156.57774M147.499656 121C135.056832 121 129 128.104316 129 139.998997 129 151.894347 135.056832 159 147.499656 159 159.939045 159 166 151.894347 166 139.998997 166 128.104316 159.939045 121 147.499656 121M181.97829 122C187.617426 130.502359 193.421417 138.949702 199.227494 147.452061L199.444518 147.452061 199.444518 135.475539C199.444518 131.089876 199.389566 129.059036 199.16976 127.134153 199.006992 125.262249 198.403917 124.407802 196.87084 124.299128L193.805382 124.03084 193.805382 122 207 122 207 124.03084 205.082958 124.299128C203.823247 124.459422 203.278602 125.262249 203.115138 127.134153 202.896028 129.004699 202.839685 131.089876 202.839685 135.475539L202.839685 159 196.815889 159C190.300311 149.055677 183.675526 139.110675 176.940143 129.166352L176.723119 129.166352 176.723119 145.525819C176.723119 149.911482 176.773897 151.943681 176.993703 153.867205 177.156471 155.737751 177.761633 156.594915 179.29471 156.699514L182.360168 156.967802 182.360168 159 169.16555 159 169.16555 156.967802 171.082592 156.699514C172.340216 156.540578 172.886949 155.737751 173.051803 153.867205 173.271609 151.996659 173.325865 149.911482 173.325865 145.525819L173.325865 127.187132C173.325865 124.459422 172.886949 124.193171 169 124.03084L169 122 181.97829 122">
+                  </path>
+                  <path d="M212.919276 150.756775 218.77962 132.041331 218.997533 132.041331 224.639964 150.756775 212.919276 150.756775ZM213.930035 172 213.930035 169.253928 209.591654 168.892621C207.997739 168.74755 207.927157 167.879865 208.289659 166.292303 209.155828 162.388405 210.458508 158.487929 211.760502 154.224777L225.798054 154.224777 229.560817 166.219768C230.065853 167.735479 229.850682 168.676384 228.33146 168.82077L224.134242 169.253928 224.134242 172 247 172 247 169.253928C243.238608 169.182761 242.29706 168.74755 241.355513 165.785241L227.102104 122 217.981978 122 209.591654 146.349921C206.98698 153.791619 204.597478 161.088931 202.863085 165.497153 201.703625 168.531998 200.908038 169.035638 197 169.253928L197 172 213.930035 172 213.930035 172ZM53.1501263 187.062542C53.2554136 185.566866 52.5153416 184.437791 51.0523376 184.437791 48.9196572 184.437791 48.6907185 185.894212 48.6907185 187.003992 48.6907185 188.000665 49.0971765 188.612774 49.9419236 188.958749 50.6471038 189.245509 51.3345321 189.534265 52.0391002 189.819694 54.5427347 190.836327 55 191.793746 55 193.692615 55 196.411178 53.4323208 198 50.8950187 198 49.5899457 198 48.0394062 197.598802 47.279746 195.721224 47 195.012641 47.0171398 193.862941 47 193.095808L48.4623919 193.095808C48.3895478 195.224218 48.7623384 196.562874 50.9648022 196.562874 52.4449461 196.562874 53.4849644 195.740519 53.4849644 194.056554 53.4849644 191.870259 52.6738848 191.850965 51.3345321 191.296075 50.6116 190.989355 49.4491545 190.589488 48.7439743 190.183633 47.4915449 189.49501 47.1750708 188.34664 47.1750708 186.928809 47.1750708 184.550898 48.7078583 183 50.8595149 183 53.2719412 183 54.7545336 184.359281 54.6125182 187.062542L53.1501263 187.062542">
+                  </path>
+                  <polyline points="58 183 67 183 67 184.5 63.293 184.5 63.293 198 61.707 198 61.707 184.5 58 184.5 58 183">
+                  </polyline>
+                  <path d="M72.8224299,192.179633 L69.1224039,192.179633 L70.9720924,184.19825 L71.0097352,184.19825 L72.8224299,192.179633 Z M66,198 L67.7198858,198 L68.7485722,193.678661 L73.1774403,193.678661 L74.2801142,198 L76,198 L72.056594,183 L69.9998702,183 L66,198 L66,198 Z">
+                  </path>
+                  <polyline points="76 183 85 183 85 184.499 81.293 184.499 81.293 198 79.708 198 79.708 184.499 76 184.499 76 183">
+                  </polyline>
+                  <polyline points="86 198 86 183 93.958 183 93.958 184.499 87.761 184.499 87.761 189.458 93.575 189.458 93.575 190.96 87.761 190.96 87.761 196.501 94 196.501 94 198 86 198">
+                  </polyline>
+                  <path d="M103 183 104.47565 183 104.47565 193.526387C104.457127 194.678877 104.635564 196.533442 106.999691 196.533442 109.363819 196.533442 109.541638 194.678877 109.524967 193.526387L109.524967 183 111 183 111 194.113146C111 196.72948 109.417535 198 106.999691 198 104.581848 198 103 196.72948 103 194.113146L103 183M121.365377 183 123 183 123 198 120.323733 198 116.186564 185.996666C115.94992 185.31731 115.772779 184.63865 115.636675 183.737705L115.594954 183.737705C115.614788 184.499028 115.636675 185.279105 115.636675 186.039039L115.636675 198 114 198 114 183 116.659169 183 120.853788 195.2798C121.030929 195.738261 121.170454 196.219644 121.365377 196.919839L121.405046 196.919839C121.384528 196.380106 121.365377 195.799389 121.365377 195.240206L121.365377 183">
+                  </path>
+                  <polygon points="126 198 128 198 128 183 126 183">
+                  </polygon>
+                  <polyline points="138.275 183 140 183 135.956 198 134.026 198 130 183 131.722 183 134.963 196.802 134.999 196.802 138.275 183">
+                  </polyline>
+                  <polyline points="142 198 142 183 149.957 183 149.957 184.499 143.763 184.499 143.763 189.458 149.576 189.458 149.576 190.96 143.763 190.96 143.763 196.501 150 196.501 150 198 142 198">
+                  </polyline>
+                  <path d="M153.560905 184.499028 155.757396 184.499028C156.808657 184.499028 158.706932 184.558766 158.74478 187.137955 158.78328 189.758822 156.753843 189.879689 156.019722 189.899139L153.560905 189.899139 153.560905 184.499028ZM153.560905 191.399555 156.2827 191.399555C158.125508 191.399555 158.689965 192.679078 158.689965 194.179494 158.689965 195.177688 158.8394 197.039316 159.178074 198L161 198 161 197.660322C160.622825 197.660322 160.511238 196.998333 160.457077 196.717699 160.304379 195.600028 160.211064 194.499722 160.154292 193.378577 159.930467 191.380106 159.476943 190.75771 157.655017 190.578494L157.655017 190.540289C159.290966 190.297861 160.304379 189.039872 160.360499 187.278966 160.457077 183.818283 158.576421 183 155.624927 183L152 183 152 198 153.560905 198 153.560905 191.399555 153.560905 191.399555ZM170.150222 187.062181C170.254857 185.566639 169.516904 184.436333 168.0514 184.436333 165.921983 184.436333 165.69252 185.893955 165.69252 187.004967 165.69252 187.998891 166.098822 188.612277 166.943246 188.957555 167.64938 189.243624 168.335934 189.532355 169.041456 189.819089 171.541074 190.835632 172 191.791635 172 193.690336 172 196.408657 170.430473 198 167.895365 198 166.590791 198 165.039621 197.596177 164.281475 195.720761 164 195.011576 164.018357 193.861977 164 193.094913L165.465504 193.094913C165.392688 195.221803 165.762276 196.561671 167.96451 196.561671 169.447147 196.561671 170.483708 195.739389 170.483708 194.054242 170.483708 191.868142 169.674162 191.848849 168.335934 191.294008 167.612666 190.987315 166.451277 190.587484 165.745755 190.182996 164.493804 189.493103 164.177451 188.344835 164.177451 186.92713 164.177451 184.551426 165.709653 183 167.858651 183 170.27199 183 171.754016 184.360491 171.614502 187.062181L170.150222 187.062181">
+                  </path>
+                  <polygon points="175 198 177 198 177 183 175 183">
+                  </polygon>
+                  <polyline points="179 183 188 183 188 184.499 184.293 184.499 184.293 198 182.708 198 182.708 184.499 179 184.499 179 183">
+                  </polyline>
+                  <polyline points="193.99 190.519 197.28 183 199 183 194.757 192.18 194.757 198 193.204 198 193.204 192.18 189 183 190.719 183 193.99 190.519">
+                  </polyline>
+                  <polygon points="56 172 190 172 190 171 56 171">
+                  </polygon>
+                </g>
+              </svg>
+            </span>
+            <span class="svg svg--logo-full footer-logo desktop-only">
+              <svg viewBox="0 0 365 117" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#FEFEFE" fill-rule="evenodd">
+                  <path d="M18.168 5.256c1.312 2.755 3.773 4.496 6.394 5.902 6.5 3.483 14.515 5.632 17.564 12.924 2.48 5.92.93 12.662-1.848 18.208-.796 1.587-2.124 3.608-3.997 3.894 2.578-4.729 1.06-10.472-3.3-13.735-5.946-4.457-11.704-7.725-15.684-14.154-3.207-5.174-6.408-13.779.041-17.41-.149 1.536.178 2.992.83 4.371">
+                  </path>
+                  <path d="M46.254 23.895c-.763-2.543-1.768-4.958-2.04-7.631-.304-2.968.934-6.017 3.62-7.434.231 1.824-.104 3.61.815 5.296 1.92 3.526 4.695 6.034 6.576 9.592 2.257 4.256 1.957 9.563-1.692 12.756-3.883 3.394-8.693 5.493-11.5 9.876-1.23-2.282-.41-4.817.56-6.953 2.195-4.825 5.347-9.865 3.661-15.502M27.411 32.605c2.675 1.094 5.193 2.405 7.02 4.802 1.838 2.41 1.998 5.407 1.221 8.188-1.507-1.66-2.978-3.386-5.168-4.126-2.752-.927-5.488-1.418-8.005-2.872-2.45-1.408-4.198-3.398-5.655-5.877-1.776-3.026-2.53-7.374.35-9.835-.447 2.369-.243 5.257 1.915 6.572 2.572 1.567 5.543 2.015 8.322 3.148M37.5 47.429c4.599 0 9.136.018 13.747.016.008 2.015-.027 3.834 0 5.942-4.7 1.613-9.697 3.299-14.308 5.143-5.026-2.095-10.453-3.452-15.478-5.546-.024-1.964.025-3.483 0-5.54 5.477 0 10.968-.015 16.039-.015M17.681 59.026c1.801 0 3.046 0 4.658-.01-2.485 5.717-3.439 12.01-3.846 18.16-.516 7.764-1.053 15.753 1.287 23.308.791 2.56 4.188 4.204 6.751 2.238 1.867-1.434 2.516-3.488 2.574-5.606.341-12.546.842-25.178.906-37.948 4.827-.014 9.02.035 13.934 0 .315 12.786.183 25.694.6 38.542.078 2.332 1.59 5.006 3.805 5.62 3.68 1.03 6.484-3.025 6.73-6.36.93-12.659.684-25.943-4.074-37.895 7.675 0 14.311.044 21.466 0-2.563 18.976-5.866 38.243-8.537 57.201-6.492-2.483-12.832-5.505-19.867-6.25-11.674-1.235-23.505.944-33.819 6.474C6.57 97.43 4.02 78.171.884 59.016c5.675-.012 11.333.01 16.797.01M164.631 28.586v2.906c-4.364.565-5.09.969-6.22 4.682-1.212 3.879-3.476 11.55-5.817 20.273l-7.51 28.03h-10.259l-9.934-37.8h-.244l-9.531 37.8h-10.177l-7.107-26.978c-2.263-8.402-4.283-16.235-6.059-22.132-.889-2.906-1.453-3.472-5.492-3.875v-2.906h23.183v2.906l-3.719.565c-.887.083-1.369.404-1.612.888-.163.485-.083 1.213.162 2.18l9.207 36.51h.162l10.016-41.841h8.965l10.661 41.84h.323l4.606-18.173c2.503-10.098 3.713-16.074 4.036-18.094.323-1.937.162-2.99-1.533-3.227l-4.604-.648v-2.906h18.497Z">
+                  </path>
+                  <path d="M178.814 64.507c0 3.07.482 3.37 4.76 3.55v2.288h-19.15v-2.288c4.275-.18 4.755-.48 4.755-3.55v-29.99c0-3.07-.48-3.37-4.755-3.554v-2.287h19.15v2.287c-4.278.184-4.76.484-4.76 3.554v29.99ZM201.336 28.675c6.204 9.575 12.587 19.09 18.968 28.665h.239V43.851c0-4.938-.058-7.225-.3-9.393-.181-2.108-.843-3.07-2.529-3.193l-3.373-.303v-2.287h14.511v2.287l-2.105.303c-1.386.182-1.988 1.085-2.169 3.193-.24 2.106-.3 4.455-.3 9.393v26.494h-6.623a2647.2 2647.2 0 0 0-21.859-33.597h-.239v18.424c0 4.937.058 7.227.299 9.393.18 2.108.842 3.071 2.528 3.19l3.372.301v2.29h-14.512v-2.29l2.108-.3c1.383-.18 1.989-1.083 2.166-3.19.242-2.107.305-4.457.305-9.394V34.517c0-3.07-.482-3.37-4.758-3.555v-2.287h14.271ZM253.184 68.48c-8.731 0-9.814-10.779-9.938-18.969.124-7.709 1.207-18.969 9.938-18.969 8.729 0 9.814 11.26 9.935 18.969-.121 8.19-1.206 18.969-9.935 18.969m0-40.706c-13.85 0-20.593 8.128-20.593 21.737 0 13.61 6.743 21.741 20.593 21.741 13.847 0 20.594-8.131 20.594-21.741 0-13.609-6.747-21.737-20.594-21.737M292.031 28.675c6.204 9.575 12.585 19.09 18.97 28.665h.239V43.851c0-4.938-.06-7.225-.302-9.393-.179-2.108-.843-3.07-2.529-3.193l-3.371-.303v-2.287h14.511v2.287l-2.109.303c-1.385.182-1.984 1.085-2.163 3.193-.242 2.106-.306 4.455-.306 9.393v26.494h-6.623a2646.984 2646.984 0 0 0-21.857-33.597h-.237v18.424c0 4.937.056 7.227.296 9.393.179 2.108.845 3.071 2.531 3.19l3.371.301v2.29h-14.511v-2.29l2.107-.3c1.384-.18 1.988-1.083 2.167-3.19.242-2.107.302-4.457.302-9.394V34.517c0-3.07-.481-3.37-4.757-3.555v-2.287h14.271Z">
+                  </path>
+                  <path d="m326.13 60.73 6.541-20.922h.245l6.298 20.922H326.13Zm1.13 23.747v-3.07l-4.843-.403c-1.782-.163-1.859-1.132-1.452-2.906.965-4.366 2.418-8.725 3.872-13.49h15.67l4.2 13.41c.564 1.692.325 2.744-1.373 2.906l-4.685.483v3.07h25.526v-3.07c-4.2-.077-5.252-.566-6.301-3.876l-15.913-48.945h-10.178l-9.366 27.218c-2.909 8.32-5.575 16.477-7.512 21.403-1.295 3.393-2.183 3.956-6.545 4.2v3.07h18.9ZM147.394 101.419c.132-1.72-.794-3.018-2.62-3.018-2.665 0-2.953 1.674-2.953 2.952 0 1.145.51 1.849 1.566 2.245.878.331 1.74.662 2.619.991 3.128 1.168 3.7 2.27 3.7 4.451 0 3.127-1.96 4.954-5.128 4.954-1.633 0-3.57-.462-4.519-2.621-.35-.814-.33-2.136-.35-3.018h1.828c-.092 2.449.374 3.988 3.125 3.988 1.85 0 3.151-.947 3.151-2.882 0-2.514-1.014-2.537-2.686-3.176-.904-.353-2.357-.812-3.238-1.277-1.566-.793-1.96-2.113-1.96-3.743 0-2.734 1.915-4.517 4.604-4.517 3.013 0 4.866 1.563 4.689 4.671h-1.828ZM151.161 97.078h10.374v1.653h-4.272v14.866h-1.828V98.731h-4.274zM168.914 107.19h-4.361l2.182-8.789h.045l2.134 8.789Zm-8.041 6.411h2.027l1.213-4.759h5.221l1.298 4.759h2.027l-4.646-16.519h-2.424l-4.716 16.519ZM172 97.082h10.373v1.651h-4.27v14.868h-1.829V98.733H172zM184.313 113.601V97.082h8.26v1.651h-6.432v5.461h6.034v1.653h-6.034v6.102h6.475v1.652zM201.537 97.082h1.826v11.869c-.023 1.3.199 3.392 3.127 3.392 2.931 0 3.149-2.092 3.129-3.392V97.082h1.829v12.531c0 2.952-1.961 4.383-4.958 4.383-2.995 0-4.953-1.431-4.953-4.383V97.082ZM223.141 97.082h1.83v16.519h-2.995l-4.628-13.22a12.97 12.97 0 0 1-.614-2.487h-.046c.021.839.046 1.697.046 2.534v13.173h-1.83V97.082h2.973l4.691 13.522c.201.504.355 1.036.573 1.805h.045a46.485 46.485 0 0 1-.045-1.848V97.082ZM228.825 113.601h1.828V97.082h-1.828zM242.767 97.082h2.027l-4.758 16.52h-2.268l-4.735-16.52h2.023l3.812 15.196h.043zM246.665 113.601V97.082h8.26v1.651h-6.432v5.461h6.037v1.653h-6.037v6.102h6.477v1.652zM259.774 98.733h2.574c1.232 0 3.456.065 3.501 2.906.044 2.886-2.333 3.018-3.194 3.04h-2.881v-5.946Zm0 7.597h3.189c2.159 0 2.821 1.41 2.821 3.063 0 1.098.176 3.148.575 4.208h2.134v-.376c-.442 0-.574-.728-.637-1.038a41.032 41.032 0 0 1-.354-3.678c-.263-2.199-.795-2.886-2.931-3.083v-.041c1.92-.268 3.106-1.651 3.171-3.592.114-3.812-2.09-4.711-5.55-4.711h-4.249v16.519h1.831v-7.271ZM278.317 101.419c.13-1.717-.793-3.018-2.623-3.018-2.664 0-2.952 1.674-2.952 2.954 0 1.143.51 1.847 1.565 2.247.882.327 1.741.658 2.625.987 3.124 1.168 3.698 2.27 3.698 4.451 0 3.127-1.963 4.956-5.131 4.956-1.634 0-3.571-.464-4.519-2.621-.353-.814-.329-2.136-.353-3.018h1.833c-.092 2.447.369 3.986 3.123 3.986 1.856 0 3.152-.945 3.152-2.882 0-2.514-1.014-2.537-2.687-3.176-.903-.353-2.354-.812-3.238-1.275-1.566-.795-1.961-2.115-1.961-3.745 0-2.732 1.916-4.515 4.603-4.515 3.018 0 4.87 1.563 4.695 4.669h-1.83ZM283.91 113.601h1.83V97.082h-1.83zM288.205 97.082h10.374v1.651h-4.272v14.868h-1.828V98.733h-4.274zM305.011 105.362l3.877-8.28h2.027l-5 10.108v6.411h-1.83v-6.41l-4.955-10.109h2.026zM150.69 84.262h150.641v-1.349h-150.64z">
+                  </path>
+                </g>
+              </svg>
+            </span>
+          </div>
+          <div class="footer-block">
+            <a href="https://www2.winona.edu/foundation/initiatives.asp" class="cta-button cta-button--gift">
+              <span>
+                Give to WSU
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="footer-block mobile-only">
+          <nav class="footer-social-nav">
+            <ul>
+              <li>
+                <a href="https://www.tiktok.com/@winonastateu">
+                  <span class="svg svg--social-tiktok footer-social-nav__svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
+                      <g data-name="Layer 2">
+                        <path class="cls-1" d="M23.79 0H3.21A3.21 3.21 0 000 3.21v20.58A3.21 3.21 0 003.21 27h20.58A3.21 3.21 0 0027 23.79V3.21A3.21 3.21 0 0023.79 0m-2.57 11.78h-.45a4.82 4.82 0 01-4-2.18V17a5.48 5.48 0 11-5.48-5.48h.34v2.7a1.86 1.86 0 00-.34 0 2.8 2.8 0 000 5.6 2.86 2.86 0 002.91-2.76V4.46h2.58a4.83 4.83 0 004.44 4.3v3" data-name="Layer 1">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/WinonaStateU">
+                  <span class="svg svg--social-facebook footer-social-nav__svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                      <path fill-rule="evenodd" d="M25.525 12.762C25.525 5.714 19.81 0 12.762 0S0 5.714 0 12.762c0 6.37 4.667 11.65 10.768 12.608v-8.92h-3.24v-3.689h3.24v-2.81c0-3.199 1.905-4.966 4.82-4.966 1.397 0 2.857.25 2.857.25v3.14h-1.609c-1.585 0-2.08.984-2.08 1.993v2.394h3.54l-.566 3.69h-2.974v8.918c6.102-.958 10.769-6.238 10.769-12.608">
+                      </path>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/winonastateu/">
+                  <span class="svg svg--social-instagram footer-social-nav__svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.99 23.99">
+                      <g data-name="Layer 2">
+                        <path class="cls-1" d="M12 0C8.74 0 8.33 0 7.05.07a8.71 8.71 0 00-2.91.56A6.07 6.07 0 00.63 4.14a8.71 8.71 0 00-.56 2.91C0 8.33 0 8.74 0 12s0 3.66.07 4.94a8.71 8.71 0 00.56 2.91A6 6 0 002 22a5.78 5.78 0 002.13 1.38 8.71 8.71 0 002.91.56C8.33 24 8.74 24 12 24s3.66 0 4.94-.07a8.71 8.71 0 002.91-.56 6.07 6.07 0 003.51-3.51 8.71 8.71 0 00.56-2.91c.08-1.29.08-1.7.08-4.95s0-3.67-.07-4.95a8.71 8.71 0 00-.56-2.91A5.78 5.78 0 0022 2 6 6 0 0019.85.63a8.71 8.71 0 00-2.91-.56C15.66 0 15.25 0 12 0zm0 2.16c3.2 0 3.58 0 4.84.07a6.68 6.68 0 012.23.41 3.75 3.75 0 011.38.9 3.75 3.75 0 01.9 1.38 6.68 6.68 0 01.41 2.23c.06 1.26.07 1.64.07 4.85s0 3.58-.07 4.84a6.68 6.68 0 01-.41 2.23 4 4 0 01-2.28 2.28 6.68 6.68 0 01-2.23.41c-1.26.06-1.64.07-4.84.07s-3.59 0-4.85-.07a6.68 6.68 0 01-2.23-.41 3.75 3.75 0 01-1.38-.9 3.75 3.75 0 01-.9-1.38 6.68 6.68 0 01-.41-2.23c-.06-1.26-.07-1.64-.07-4.84s0-3.59.07-4.85a6.68 6.68 0 01.41-2.23 3.75 3.75 0 01.9-1.38 3.75 3.75 0 011.38-.9 6.68 6.68 0 012.23-.41c1.26-.06 1.64-.07 4.85-.07zM12 16a4 4 0 114-4 4 4 0 01-4 4zm0-10.16A6.16 6.16 0 1018.16 12 6.15 6.15 0 0012 5.84zm7.84-.25a1.44 1.44 0 11-1.44-1.44 1.44 1.44 0 011.44 1.44" data-name="Layer 1">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/winonastateu">
+                  <span class="svg svg--social-twitter footer-social-nav__svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.6 20.8">
+                      <g data-name="Layer 2">
+                        <path class="cls-1" d="M23 5.18v.68A14.85 14.85 0 018.05 20.8a14.92 14.92 0 01-8-2.36 10.36 10.36 0 001.25.08 10.49 10.49 0 006.52-2.26 5.24 5.24 0 01-4.9-3.64 5.28 5.28 0 002.37-.09A5.27 5.27 0 011 7.38v-.07A5.25 5.25 0 003.41 8a5.26 5.26 0 01-1.63-7 15 15 0 0010.83 5.45 5.26 5.26 0 019-4.79A10.8 10.8 0 0024.89.38a5.26 5.26 0 01-2.31 2.91 10.93 10.93 0 003-.83A10.92 10.92 0 0123 5.18" data-name="Layer 1">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.snapchat.com/add/winonastateu">
+                  <span class="svg svg--social-snapchat footer-social-nav__svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
+                      <g data-name="Layer 2">
+                        <path class="cls-1" d="M26.9 19.75a1.81 1.81 0 00-.95-1 1.06 1.06 0 00-.21-.11l-.37-.19a8 8 0 01-2.94-2.57 5.06 5.06 0 01-.51-.91.43.43 0 010-.35.58.58 0 01.17-.18l.59-.39.63-.42a3.49 3.49 0 001.11-1.21 2.42 2.42 0 00.11-2 2.31 2.31 0 00-2.24-1.49 2.88 2.88 0 00-.65.07h-.17c0-.64 0-1.3-.07-2a7.12 7.12 0 00-1.82-4.47 7.42 7.42 0 00-1.85-1.43A8.35 8.35 0 0013.49 0a8.25 8.25 0 00-4.22 1.1 7.29 7.29 0 00-1.85 1.51A7.17 7.17 0 005.6 7.08a18.49 18.49 0 00-.06 2L5.36 9a2.79 2.79 0 00-.64-.07 2.33 2.33 0 00-2.25 1.49 2.46 2.46 0 00.12 2 3.39 3.39 0 001.11 1.19l.63.42.57.38a.58.58 0 01.19.19.44.44 0 010 .37 6 6 0 01-.5.89 8.13 8.13 0 01-2.86 2.52c-.67.35-1.34.62-1.63 1.37a1.74 1.74 0 00.46 1.84 3 3 0 00.69.54 8 8 0 001.69.68 1.19 1.19 0 01.34.16c.2.17.17.44.44.83a2 2 0 00.49.52 3.3 3.3 0 001.85.44 6.77 6.77 0 012.05.31 4.53 4.53 0 011.05.56A7.48 7.48 0 0013.49 27a7.56 7.56 0 004.34-1.38 5.27 5.27 0 011-.55 6.77 6.77 0 012.05-.31 3.3 3.3 0 001.85-.44 1.88 1.88 0 00.56-.63c.2-.33.19-.56.37-.72a1 1 0 01.32-.15 7.66 7.66 0 001.71-.69 2.87 2.87 0 00.72-.58 1.66 1.66 0 00.49-1.8zm-1.89 1c-1.15.64-1.92.57-2.51 1s-.21 1-.58 1.3-1.79 0-3.51.56c-1.43.48-2.33 1.86-4.9 1.86s-3.44-1.38-4.89-1.86c-1.73-.58-3.06-.24-3.52-.56s-.07-1-.57-1.3-1.37-.33-2.52-1c-.74-.41-.31-.66-.07-.78 4.17-2.06 4.84-5.23 4.87-5.47a.75.75 0 00-.23-.8c-.3-.28-1.62-1.11-2-1.37-.6-.43-.87-.86-.67-1.39a.82.82 0 01.83-.51 1.86 1.86 0 01.33 0c.67.15 1.31.48 1.69.58h.13c.2 0 .27-.1.26-.34a24.76 24.76 0 010-3.53 5.64 5.64 0 011.42-3.5 6.4 6.4 0 014.94-2.09 6.45 6.45 0 015 2.08 5.59 5.59 0 011.39 3.59 23.49 23.49 0 010 3.54c0 .24.05.33.25.33a.34.34 0 00.14 0c.38-.09 1-.43 1.69-.58a1.23 1.23 0 01.33 0 .83.83 0 01.83.5c.2.53-.07 1-.68 1.39-.36.26-1.68 1.1-2 1.38a.74.74 0 00-.23.8c0 .23.69 3.41 4.87 5.46.23.07.64.33-.1.74z" data-name="Layer 1">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/user/WinonaU">
+                  <span class="svg svg--social-youtube footer-social-nav__svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.39 23.52">
+                      <g data-name="Layer 2">
+                        <path class="cls-1" d="M13.82 0h12.02l.83.06.77.06h.49l.45.05h.21l.4.06a8 8 0 01.8.16 4.19 4.19 0 012.95 3A15.5 15.5 0 0133 5.41l.06.48.05.5v1.02l.05.75v8.98l-.05.5-.06.49a15.3 15.3 0 01-.33 1.73 4.16 4.16 0 01-2.95 3l-.29.07-.33.06h-.19l-.4.06-.43.05-.48.05-.5.05h-.53l-.83.06h-1.46l-1.1.05H8.8l-.88-.05-.85-.05-.8-.06-.5-.05-.47-.05-.44-.05h-.59l-.33-.06-.29-.07a4.16 4.16 0 01-2.95-3 15.1 15.1 0 01-.36-2l-.07-.57v-3.34L0 13V7.67a2.64 2.64 0 010-.29v-.87L.3 6a17.09 17.09 0 01.4-2.33 4.19 4.19 0 013-3 8 8 0 01.8-.16l.4-.06h.9l.71-.13L7 .28l.88-.06h5.94zm-.54 6.8v9.93l8.73-5z" data-name="Layer 1">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/school/winona-state-university/">
+                  <span class="svg svg--social-linkedin footer-social-nav__svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <g data-name="Layer 2">
+                        <path class="cls-1" d="M21.83 0H2.17A2.17 2.17 0 000 2.17v19.66A2.17 2.17 0 002.17 24h19.66A2.17 2.17 0 0024 21.83V2.17A2.17 2.17 0 0021.83 0zM7.43 20.72a.64.64 0 01-.64.63H4.11a.64.64 0 01-.64-.63V9.45a.64.64 0 01.64-.63h2.68a.64.64 0 01.64.63zm-2-13A2.55 2.55 0 118 5.2a2.55 2.55 0 01-2.55 2.55zm16 13a.58.58 0 01-.58.58H18a.58.58 0 01-.58-.58v-5.23c0-.79.23-3.46-2.06-3.46-1.78 0-2.14 1.83-2.21 2.64v6.1a.58.58 0 01-.58.58H9.79a.58.58 0 01-.58-.58V9.4a.58.58 0 01.58-.58h2.79a.58.58 0 01.58.58v1a4 4 0 013.73-1.75c4.62 0 4.59 4.32 4.59 6.69v5.45z" data-name="Layer 1">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://blogs.winona.edu/">
+                  <span class="svg svg--social-wordpress footer-social-nav__svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
+                      <g data-name="Layer 2">
+                        <path class="cls-1" d="M24.15 7.68A12.12 12.12 0 0119.6 24l3.71-10.72a11.47 11.47 0 00.92-4.35 9.57 9.57 0 00-.08-1.24zm-9 .13c.73 0 1.39-.12 1.39-.12a.5.5 0 00-.08-1s-2 .16-3.23.16-3.2-.16-3.2-.16a.5.5 0 00-.07 1s.61.08 1.27.12L13.14 13l-2.66 8L6.06 7.81c.73 0 1.39-.12 1.39-.12a.5.5 0 00-.08-1s-2 .16-3.23.16h-.78a12.13 12.13 0 0118.34-2.3h-.16a2.1 2.1 0 00-2 2.15 5.74 5.74 0 001.19 2.85 6.42 6.42 0 011 3.35 14.79 14.79 0 01-.92 3.92l-1.21 4.05zM13.5 25.64a12.16 12.16 0 01-3.43-.5l3.64-10.58 3.73 10.22.09.17a12.22 12.22 0 01-4 .69zM1.36 13.5a12.15 12.15 0 011.05-4.94L8.2 24.42A12.13 12.13 0 011.36 13.5zM13.5 0A13.5 13.5 0 1027 13.5 13.52 13.52 0 0013.5 0z" data-name="Layer 1">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-locations">
+          <div class="footer-campus">
+            <div class="footer-campus__title">
+              Winona Campus
+            </div>
+            <p>
+              P.O. Box 5838
+              <br>
+              175 West Mark Street
+              <br>
+              Winona, MN 55987
+              <br>
+              <a href="tel:5074575000">
+                507.457.5000
+              </a>
+              | 
+              <a href="tel:8003425978">
+                800.342.5978
+              </a>
+            </p>
+          </div>
+          <div class="footer-campus">
+            <div class="footer-campus__title">
+              Rochester Campus
+            </div>
+            <p>
+              859 30th Ave SE
+              <br>
+              Rochester, MN 55904
+              <br>
+              <a href="tel:5072857100">
+                507.285.7100
+              </a>
+              | 
+              <a href="tel:8003665418">
+                800.342.5978
+              </a>
+            </p>
+          </div>
+          <div class="footer-campus">
+            <div class="footer-campus__title">
+              Rochester Campus - Broadway
+            </div>
+            <p>
+              400 South Broadway Avenue
+              <br>
+              Rochester, MN 55904
+              <br>
+              <a href="tel:507.535.2555">
+                507.535.2555
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom__container">
+          <div class="footer-bottom__text">
+            Winona State University is an 
+            <a href="/about/leadership/affirmative-action/">
+              equal opportunity
+            </a>
+            employer and educator | 
+            <a href="/about/leadership/title-ix/">
+              Title IX &amp; Sexual Violence Resources
+            </a>
+            | 
+            <a href="https://www2.winona.edu/disclaimer.asp">
+              Privacy
+            </a>
+            | 
+            <a href="https://www2.winona.edu/contactwsu.asp">
+              Contact Us
+            </a>
+            <br>
+            The oldest member of the colleges and universities of 
+            <a href="https://www.minnstate.edu/">
+              Minnesota State
+            </a>
+          </div>
+          <div>
+            <a href="https://www.minnstate.edu/">
+              <img src="https://www.winona.edu/wp-content/themes/wsu/img/logo-mn-state.png" class="footer-bottom__logo" alt="Minnesota State logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>  
+</body>
+</html>
