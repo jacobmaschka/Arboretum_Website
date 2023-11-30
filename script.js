@@ -248,7 +248,7 @@ function treeDetails(xml3){
         }
 
     }
-    document.getElementById("treeDetails").innerHTML += txt3
+    document.getElementById("treeDetails").innerHTML = txt3
 }
 
 
