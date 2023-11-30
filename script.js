@@ -148,7 +148,7 @@ function highlightSelection(suggestions, index) {
 
 
 // Sams javascript code
-
+let txt3
 let treeid
 
 function unhide(alphabetLoc){
@@ -206,7 +206,10 @@ function loadXMLDoc3(id){
     var urlPart2 = ".xml"
     var treeUrl = urlPart1.concat(urlPart2)
 
+    console.log(treeUrl)
+
     xhttp.onreadystatechange = function() {
+        
         if (this.readyState == 4 && this.status == 200) {
             // Action to be performed when the document is read;
 
@@ -214,6 +217,15 @@ function loadXMLDoc3(id){
             
 
         }
+        else{
+
+            txt3 = ""
+            document.getElementById("treeDetails").innerHTML = txt3
+
+
+
+        }
+
     };
     xhttp.open("GET", treeUrl, true);
     xhttp.send();
@@ -223,8 +235,6 @@ function treeDetails(xml3){
 
 
     xmlDoc3 = xml3.responseXML
-
-    txt3 = ""
 
     x3 = xmlDoc3.getElementsByTagName("AttributeValuesData")
 
@@ -447,7 +457,7 @@ function myParser2(xml){
 
 }
 
-// this is the test section of javascript
+// some of this code comes from w3Schools how to Popup form
 
 function openForm() {
     document.getElementById("myForm").style.display = "block";
