@@ -206,8 +206,6 @@ function loadXMLDoc3(id){
     var urlPart2 = ".xml"
     var treeUrl = urlPart1.concat(urlPart2)
 
-    console.log(treeUrl)
-
     xhttp.onreadystatechange = function() {
         
         if (this.readyState == 4 && this.status == 200) {
@@ -227,7 +225,7 @@ function loadXMLDoc3(id){
         }
 
     };
-    xhttp.open("GET", treeUrl, true);
+    xhttp.open("GET", "treeXmls/"+treeUrl, true);
     xhttp.send();
 }
 
