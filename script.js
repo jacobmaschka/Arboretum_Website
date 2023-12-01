@@ -294,6 +294,16 @@ function showtree(xml2){
             }
 
             document.getElementById("treeInfo").innerHTML = txt2
+            
+            // handles if an unexpected error occurs when loading the tree image.
+            treeImg = document.getElementById("treeimg")
+            treeImg.addEventListener("error", function(event){
+
+                event.target.src = "stockTree.jpg"
+                event.onerror = null
+
+            })
+
             break
         }
         
