@@ -189,7 +189,8 @@
 
 .treeButtons{
 
-    margin: 0.3%
+    margin: 0.3%;
+    
 
 
 }
@@ -197,17 +198,38 @@
 #collapsible {
     background-color: white;
     margin: 0.3%;
-    color: #444;
+    color:#4b08a1;
     cursor: pointer;
     padding: 18px;
     width: 99%;
     border: none;
     text-align: left;
     outline: none;
-    font: arial;
     font-size: 125%;
     font-weight: bold;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#holdDetailButtons{
+    position:fixed;
+    width: 100%;
+    background-color:#4b08a1;
+
+
+}
+
+#detailButtons{
+
+    background-color: white;
+    margin: max(5px, 0.5%);
+    color:#4b08a1;
+    cursor: pointer;
+    padding: max(10px, 0.5%);
+    border: none;
+    outline: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 #buttonExtra{
@@ -232,7 +254,9 @@
 
     background-color: #D9D5D1;
     overflow: auto;
-    max-height: 91%;
+    max-height: 83%;
+    position: absolute;
+    top: 65px;
 
 }
 body{
@@ -241,32 +265,6 @@ body{
 
     background-attachment: fixed;
     margin: 0;
-}
-#headerContent{
-
-    
-    color: white;
-    background-color: #4b08a1;
-    padding: 1.0%;
-    margin: 0;
-    overflow: hidden;
-    
-}
-#headerimg{
-
-    float: left;
-    width: 50%;
-    max-width: 255px;
-
-}
-#headerHTML{
-
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    
-    
-    
 }
 #treeDesc{
 
@@ -323,17 +321,19 @@ main {
 
     height: 100%;
     background-color: #4b08a1;
+    
   }
   
   /* Add a red background color to the cancel button */
   .form-container .cancel {
     background-color: #D9D5D1;
-    bottom: 0;
+    color:#4b08a1;
+    bottom: 0.5%;
     position: fixed;
     border: none;
     cursor: pointer;
-    width: 99%;
+    width: 100%;
     padding: 1%;
-    margin: 0.5%;
+    font-weight: bold;
     margin-bottom:10px;
   }
