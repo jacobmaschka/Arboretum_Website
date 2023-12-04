@@ -6,16 +6,23 @@
  /* Styles for the search input, including width, padding, and font size */
  #searchInput {
     width: 100%;
-    padding: 8px;
-    font-size: 16px;
+    padding: 12px;
+    font-size: 20px;
     box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Container style for the search suggestions, positioning it relative to the input */
 #suggestions-container {
     position: relative;
-    width: 300px;
+    width: 400px;
     margin: auto;
+}
+
+/* Style for the image container */
+.search-image-container {
+    margin-bottom: 10px; 
 }
 
 /* Style for the suggestions dropdown, including positioning, borders, and shadows */
