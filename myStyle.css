@@ -5,30 +5,32 @@
 
  /* Styles for the search input, including width, padding, and font size */
  #searchInput {
-    width: 100%;
+    width: 90%; /* Adjust this to how wide you want your search bar to be */
     padding: 12px;
     font-size: 20px;
     box-sizing: border-box;
-    margin: 0 auto 20px auto;
+    margin: 20px auto; /* This adds margin on the top and bottom */
+    display: block; /* Ensures that margin: auto centers the input */
 }
 
 /* Container style for the search suggestions, positioning it relative to the input */
 #suggestions-container {
     position: relative;
-    width: 400px;
+    width: 90%;
     margin: auto;
 }
 
 /* Style for the image container */
 .search-image-container {
-    width: 100%;
-    margin-bottom: 30px; 
+    width: 50%;
+    margin: auto; 
+    display: block;
 }
 
 /* Style for the suggestions dropdown, including positioning, borders, and shadows */
 #suggestions {
     position: absolute;
-    width: 100%;
+    width: calc(100% - 24px); /* 100% of the parent width minus the padding */
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-top: none;
@@ -38,6 +40,10 @@
     background: white;
     overflow-y: auto;
     max-height: 200px;
+    top: 100%; /* Position the dropdown right below the search input */
+    left: 0;
+    right: 0;
+    margin: auto; /* Centers the dropdown */
 }
 
 /* Styles for each suggestion within the dropdown */
@@ -59,8 +65,10 @@
 
 /* Style for the tree image */
 .tree-image {
-    width: 200px;
+    max-width: 100%; /* Makes the image responsive */
     height: auto;
+    display: block; /* To allow margin: auto to work */
+    margin: auto; /* Center the image within its container */
 }
 
 
