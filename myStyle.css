@@ -9,8 +9,7 @@
     padding: 12px;
     font-size: 20px;
     box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 20px auto;
 }
 
 /* Container style for the search suggestions, positioning it relative to the input */
@@ -22,7 +21,8 @@
 
 /* Style for the image container */
 .search-image-container {
-    margin-bottom: 10px; 
+    width: 100%;
+    margin-bottom: 30px; 
 }
 
 /* Style for the suggestions dropdown, including positioning, borders, and shadows */
