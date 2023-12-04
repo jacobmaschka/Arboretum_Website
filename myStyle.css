@@ -374,3 +374,9 @@ main {
     font-weight: bold;
     margin-bottom:10px;
   }
+
+  /* The tree popup image on details tab */
+  #treeimg {
+    padding-top: 20px;
+    padding-right: 20px;
+  }
