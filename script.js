@@ -76,6 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
             currentSelectionIndex = (currentSelectionIndex + move + suggestions.length) % suggestions.length;
             highlightSelection(suggestions, currentSelectionIndex);
         }
+
+
     });
 });
 
@@ -113,22 +115,15 @@ function displaySuggestions(suggestions) {
 
 // Function to display the details of a selected tree
 function displayDetails(tree) {
+    document.getElementById('suggestions').style.display = 'none';
+    
     var detailsDiv = document.getElementById('treeDetailsSearch');
     detailsDiv.innerHTML = '';
 
     var nameElement = document.createElement('h3');
     nameElement.textContent = tree.name + " (ID: " + tree.id + ")";
-    //detailsDiv.appendChild(nameElement);
 
     saveTree(tree.id)
-    // If the tree has an image, display it
-    // if (tree.image) {
-    //     var imgElement = document.createElement('img');
-    //     imgElement.src = tree.image;
-    //     imgElement.alt = 'Image of ' + tree.name;
-    //     imgElement.className = 'tree-image';
-    //     detailsDiv.appendChild(imgElement);
-    // }
 }
 
 

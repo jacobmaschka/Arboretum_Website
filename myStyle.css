@@ -9,7 +9,7 @@
     padding: 12px;
     font-size: 20px;
     box-sizing: border-box;
-    margin: 20px auto; /* This adds margin on the top and bottom */
+    margin: 20px auto 40px; /* This adds margin on the top and bottom */
     display: block; /* Ensures that margin: auto centers the input */
 }
 
@@ -23,7 +23,7 @@
 /* Style for the image container */
 .search-image-container {
     width: 50%;
-    margin: auto; 
+    margin: 40px auto 30px; 
     display: block;
 }
 
