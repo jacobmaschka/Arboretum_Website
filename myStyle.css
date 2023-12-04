@@ -210,16 +210,17 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#holdDetailButtons{
+#holdCurrentTreeButtons{
     position:fixed;
     width: 100%;
     background-color:#4b08a1;
     text-align: center;
+    
 
 
 }
 
-#detailButtons{
+.currentTreeButtons{
 
     background-color: white;
     margin: max(5px, 0.5%);
@@ -233,9 +234,27 @@
 
 }
 
+
+#currentTreeButtonDetails{
+
+    opacity: 0.33;
+    cursor: auto;
+    
+
+}
+
 #buttonExtra{
 
     text-align: start;
+
+
+}
+
+#currentTreeimg{
+
+
+    float:left;
+    margin: 1%;
 
 
 }
@@ -256,6 +275,7 @@
     background-color: #D9D5D1;
     overflow: auto;
     max-height: 83%;
+    width: 100%;
     position: absolute;
     top: 65px;
 
@@ -277,6 +297,15 @@ body{
 
     margin: 0.5%;
     
+
+}
+
+#noimgText{
+
+    font-weight: bold;
+    color:#4b08a1;
+    font-size:larger;
+
 
 }
 

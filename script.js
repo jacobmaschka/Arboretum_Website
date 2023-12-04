@@ -149,6 +149,8 @@ function highlightSelection(suggestions, index) {
 
 // Sams javascript code
 let txt3
+let txt4
+let txt2
 let treeid
 
 function unhide(alphabetLoc){
@@ -219,6 +221,7 @@ function loadXMLDoc3(id){
 
             txt3 = ""
             document.getElementById("treeDetails").innerHTML = txt3
+            txt4 = ""
 
 
 
@@ -235,6 +238,9 @@ function treeDetails(xml3){
     xmlDoc3 = xml3.responseXML
 
     x3 = xmlDoc3.getElementsByTagName("AttributeValuesData")
+    x4 = xmlDoc3.getElementsByTagName("ResourceData")
+    
+    console.log(x4)
 
     for(i=0; i < x3.length; i++)
     {
@@ -256,7 +262,64 @@ function treeDetails(xml3){
         }
 
     }
+
     document.getElementById("treeDetails").innerHTML = txt3
+
+    for(i=0; i < x4.length; i++){
+
+        if(x4[i].childNodes[5].innerHTML == "Image"){
+
+            txt4 += "<img id = currentTreeimg src =" + x4[i].childNodes[3].innerHTML +  ">"
+
+        }
+
+
+    }
+    if(txt4 == ""){
+
+        txt4 = "<p id = noimgText>This tree has no additional images</p>"
+
+
+    }
+
+}
+
+function currentTreeimgButton(){
+
+    document.getElementById("treeInfo").innerHTML = ""
+    document.getElementById("treeDetails").innerHTML = txt4
+    document.getElementById("currentTreeButtonimg").disabled = true
+    document.getElementById("currentTreeButtonimg").style.opacity = "0.33"
+    document.getElementById("currentTreeButtonimg").style.cursor = "auto"
+    document.getElementById("currentTreeButtonDetails").disabled = false
+    document.getElementById("currentTreeButtonDetails").style.opacity = "100"
+    document.getElementById("currentTreeButtonDetails").style.cursor = "pointer"
+
+}
+
+function currentTreeDetailsButton(){
+
+    currentTreeButtonsReset()
+    document.getElementById("treeInfo").innerHTML = txt2
+    document.getElementById("treeDetails").innerHTML = txt3
+    document.getElementById("currentTreeButtonDetails").disabled = true
+    document.getElementById("currentTreeButtonDetails").style.opacity = "0.33"
+    document.getElementById("currentTreeButtonDetails").style.cursor = "auto"
+
+}
+
+
+function currentTreeButtonsReset(){
+
+
+    document.getElementById("currentTreeButtonimg").disabled = false
+    document.getElementById("currentTreeButtonimg").style.opacity = "100"
+    document.getElementById("currentTreeButtonimg").style.cursor = "pointer"
+    document.getElementById("currentTreeButtonDetails").disabled = true
+    document.getElementById("currentTreeButtonDetails").style.opacity = "0.33"
+    document.getElementById("currentTreeButtonDetails").style.cursor = "auto"
+
+
 }
 
 
@@ -267,6 +330,7 @@ function saveTree(id){
     loadXMLDoc3(treeid)
     document.body.style.overflow = "hidden"
     document.getElementById("myForm").style.display = "block"
+    currentTreeButtonsReset()
 }
 
 function showtree(xml2){
