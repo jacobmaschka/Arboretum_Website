@@ -146,6 +146,8 @@ function highlightSelection(suggestions, index) {
 let txt3
 let txt4
 let txt2
+let txt
+let txt5
 let treeid
 
 function unhide(alphabetLoc){
@@ -234,8 +236,8 @@ function treeDetails(xml3){
 
     x3 = xmlDoc3.getElementsByTagName("AttributeValuesData")
     x4 = xmlDoc3.getElementsByTagName("ResourceData")
+    x5 = xmlDoc3.getElementsByTagName("LocationData")
     
-    console.log(x4)
 
     for(i=0; i < x3.length; i++)
     {
@@ -277,6 +279,8 @@ function treeDetails(xml3){
 
     }
 
+    txt5 = x5[0].childNodes[3].innerHTML.toLowerCase().replace(/[\[\]']+/g,'')
+    
 }
 
 function currentTreeimgButton(){
@@ -289,6 +293,11 @@ function currentTreeimgButton(){
     document.getElementById("currentTreeButtonDetails").disabled = false
     document.getElementById("currentTreeButtonDetails").style.opacity = "100"
     document.getElementById("currentTreeButtonDetails").style.cursor = "pointer"
+    document.getElementById("map").innerHTML = ""
+    document.getElementById("map").style.display = "none"
+    document.getElementById("currentTreeButtonLocation").disabled = false
+    document.getElementById("currentTreeButtonLocation").style.opacity = "100"
+    document.getElementById("currentTreeButtonLocation").style.cursor = "pointer"
 
 }
 
@@ -303,6 +312,25 @@ function currentTreeDetailsButton(){
 
 }
 
+function currentTreeLocationButton(){
+
+    initMap(txt5)
+    document.getElementById("treeInfo").innerHTML = ""
+    document.getElementById("treeDetails").innerHTML = ""
+    document.getElementById("map").style.display = "block"
+    document.getElementById("currentTreeButtonLocation").disabled = true
+    document.getElementById("currentTreeButtonLocation").style.opacity = "0.33"
+    document.getElementById("currentTreeButtonLocation").style.cursor = "auto"
+    document.getElementById("currentTreeButtonDetails").disabled = false
+    document.getElementById("currentTreeButtonDetails").style.opacity = "100"
+    document.getElementById("currentTreeButtonDetails").style.cursor = "pointer"
+    document.getElementById("currentTreeButtonimg").disabled = false
+    document.getElementById("currentTreeButtonimg").style.opacity = "100"
+    document.getElementById("currentTreeButtonimg").style.cursor = "pointer"
+
+
+}
+
 
 function currentTreeButtonsReset(){
 
@@ -313,6 +341,11 @@ function currentTreeButtonsReset(){
     document.getElementById("currentTreeButtonDetails").disabled = true
     document.getElementById("currentTreeButtonDetails").style.opacity = "0.33"
     document.getElementById("currentTreeButtonDetails").style.cursor = "auto"
+    document.getElementById("map").innerHTML = ""
+    document.getElementById("map").style.display = "none"
+    document.getElementById("currentTreeButtonLocation").disabled = false
+    document.getElementById("currentTreeButtonLocation").style.opacity = "100"
+    document.getElementById("currentTreeButtonLocation").style.cursor = "pointer"
 
 
 }
@@ -325,6 +358,7 @@ function saveTree(id){
     loadXMLDoc3(treeid)
     document.body.style.overflow = "hidden"
     document.getElementById("myForm").style.display = "block"
+    document.getElementById("footer").style.display = "none"
     currentTreeButtonsReset()
 }
 
@@ -524,6 +558,29 @@ function myParser2(xml){
 
 }
 
+
+// some of this code comes from google maps api documentation
+function initMap(cord) {
+
+    var objcord = JSON.parse(cord)
+
+    var numlat = Number(objcord.lat)
+    var numlng = Number(objcord.lng)
+
+    var macc = {lat:numlat,lng:numlng}
+
+    var map = new google.maps.Map(
+
+        document.getElementById("map"), {zoom: 20, center: macc});
+
+    var marker = new google.maps.Marker({position: macc, map: map});
+
+    map.setMapTypeId("satellite")
+    map.setOptions({scrollwheel:true})
+    
+
+  }
+
 // some of this code comes from w3Schools how to Popup form
 
 function openForm() {
@@ -533,4 +590,5 @@ function openForm() {
   function closeForm() {
     document.getElementById("myForm").style.display = "none";
     document.body.style.overflow = "auto"
+    document.getElementById("footer").style.display = "block"
   }

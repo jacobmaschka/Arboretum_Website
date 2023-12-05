@@ -734,7 +734,7 @@
 
         <!-- some of this popup code comes from w3Schools how to Popup form-->
         <!--beginning of code for popup-->
-
+  
         <div class="form-popup" id="myForm">
           <form class="form-container">
               
@@ -743,7 +743,7 @@
 
               <button type = "button" class="currentTreeButtons" id="currentTreeButtonDetails" onclick="currentTreeDetailsButton()" disabled>Details</button>
               <button type = "button" class="currentTreeButtons" id="currentTreeButtonimg" onclick= "currentTreeimgButton()">Images</button>
-              <button class="currentTreeButtons" onclick="">Location</button>
+              <button type = "button" class="currentTreeButtons" id="currentTreeButtonLocation" onclick="currentTreeLocationButton()">Location</button>
 
               
             </div>
@@ -754,8 +754,16 @@
 
                 <div id = "treeDetails"></div>
 
+                <div id ="map"></div>
 
+              
               </div>
+              <script
+              async
+              defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGdZDjW8aojeftNP9U80yc6zTu_OjBQ1s&callback=initMap"
+              ></script>
+
               <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
           </form>
           </div>
