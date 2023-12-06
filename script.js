@@ -139,7 +139,19 @@ function highlightSelection(suggestions, index) {
 }
 
 
+// If the search bar is empty, hide the suggestions div
+document.addEventListener('DOMContentLoaded', function () {
+    var searchInput = document.getElementById('searchInput');
+    var suggestionsDiv = document.getElementById('suggestions');
 
+    searchInput.addEventListener('input', function () {
+        // Check if the input value is empty
+        if (searchInput.value.trim() == '') {
+            // Set the display property of the suggestions div to "none"
+            suggestionsDiv.style.display = 'none';
+        } 
+    });
+});
 
 
 // Sams javascript code
