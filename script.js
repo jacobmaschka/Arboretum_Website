@@ -152,9 +152,9 @@ document.addEventListener('DOMContentLoaded', function () {
         } 
     });
 
-    searchInput.addEventListener('blur', function() {
-        suggestionsDiv.style.display = 'none';
-    });
+    // searchInput.addEventListener('blur', function() {
+    //     suggestionsDiv.style.display = 'none';
+    // });
 });
 
 

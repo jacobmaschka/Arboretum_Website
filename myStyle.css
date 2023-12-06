@@ -45,6 +45,7 @@
     left: 0;
     right: 0;
     margin: auto; /* Centers the dropdown */
+    border-radius: 10px;
 }
 
 /* Styles for each suggestion within the dropdown */
