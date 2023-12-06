@@ -139,7 +139,7 @@ function highlightSelection(suggestions, index) {
 }
 
 
-// If the search bar is empty, hide the suggestions div
+// If the search bar is empty, or it loses focus, hide the suggestions div
 document.addEventListener('DOMContentLoaded', function () {
     var searchInput = document.getElementById('searchInput');
     var suggestionsDiv = document.getElementById('suggestions');
@@ -150,6 +150,10 @@ document.addEventListener('DOMContentLoaded', function () {
             // Set the display property of the suggestions div to "none"
             suggestionsDiv.style.display = 'none';
         } 
+    });
+
+    searchInput.addEventListener('blur', function() {
+        suggestionsDiv.style.display = 'none';
     });
 });
 
