@@ -202,6 +202,7 @@
     border-radius: 10px;
     margin-top: 1px;
     margin-bottom: 1px;
+    text-indent:0.5em;
 }
 
 .treeButtons{
@@ -375,9 +376,9 @@ main {
     height: 100%;
     background-color: #4b08a1;
     
+    
   }
   
-  /* Add a red background color to the cancel button */
   .form-container .cancel {
     background-color: #D9D5D1;
     color:#4b08a1;
@@ -388,8 +389,13 @@ main {
     width: 100%;
     padding: 1%;
     font-weight: bold;
-    margin-bottom:10px;
-    /* border-radius: 100px; */
+    margin-bottom: 10px;
+
+  }
+  .cancel{
+
+    border-radius: 10px;
+
   }
 
   /* The tree popup image on details tab */
