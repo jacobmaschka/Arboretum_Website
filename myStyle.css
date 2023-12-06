@@ -240,9 +240,7 @@
     width: 100%;
     background-color:#4b08a1;
     text-align: center;
-    
-
-
+    border-radius: 10px;
 }
 
 .currentTreeButtons{
@@ -256,7 +254,7 @@
     outline: none;
     font-weight: bold;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
+    border-radius: 10px;
 }
 
 
@@ -391,6 +389,7 @@ main {
     padding: 1%;
     font-weight: bold;
     margin-bottom:10px;
+    /* border-radius: 100px; */
   }
 
   /* The tree popup image on details tab */
