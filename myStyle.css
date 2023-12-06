@@ -11,6 +11,7 @@
     box-sizing: border-box;
     margin: 20px auto 40px; /* This adds margin on the top and bottom */
     display: block; /* Ensures that margin: auto centers the input */
+    border-radius: 10px;
 }
 
 /* Container style for the search suggestions, positioning it relative to the input */
@@ -223,7 +224,7 @@
     font-size: 125%;
     font-weight: bold;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
+    border-radius: 10px;
 }
 
 #buttonIcon{
