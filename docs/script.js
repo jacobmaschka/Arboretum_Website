@@ -151,10 +151,12 @@ document.addEventListener('DOMContentLoaded', function () {
             suggestionsDiv.style.display = 'none';
         } 
     });
-
-    // searchInput.addEventListener('blur', function() {
-    //     suggestionsDiv.style.display = 'none';
-    // });
+    
+    searchInput.addEventListener('blur', function() {
+        setTimeout(function () {
+            suggestionsDiv.style.display = 'none';
+        }, 100);
+    });
 });
 
 
