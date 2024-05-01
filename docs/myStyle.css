@@ -28,6 +28,10 @@
     display: block;
 }
 
+.search-image {
+    border-radius: 0.75rem;
+}
+
 /* Style for the suggestions dropdown, including positioning, borders, and shadows */
 #suggestions {
     position: absolute;
