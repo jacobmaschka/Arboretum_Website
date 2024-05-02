@@ -1,4 +1,4 @@
-# WSU Arboretum Project
+# WSU Arboretum Website Redesign
 ## Overview
 - This project was developed in Fall 2023 for CS444 - Human Computer Interaction.
 - The purpose was to propose a redesign for the current WSU Arboretum website found [here](https://www2.winona.edu/m/arboretum/) (still current as of May 1, 2024).
