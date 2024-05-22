@@ -9,5 +9,5 @@
 - XML
 - Google Maps API
 ## Notes for further development
-- Some trees are missing images because were not given all individual tree XMLs.
+- Some trees are missing images because we were not given all the individual tree XMLs.
 - Some of the images we were given were corrupted, causing them to not display properly.
