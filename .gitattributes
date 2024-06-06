@@ -1,2 +1,12 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Docs folder
+/docs/*.html linguist-language=HTML
+/docs/*.js linguist-language=JavaScript
+/docs/*.css linguist-language=CSS
+
+
+# Database folder
+/database/*.py linguist-language=Python
+/database/*.sql linguist-language=SQL
