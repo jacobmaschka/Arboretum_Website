@@ -1,5 +1,5 @@
 # WSU Arboretum Website Redesign
-- Deployment can be found at https://jacobmaschka.github.io/HCI-Project
+- Deployment can be found at https://jacobmaschka.github.io/Arboretum_Website/
 ## Overview
 - This project was developed in Fall 2023 for CS444 - Human Computer Interaction.
 - The purpose was to propose a redesign for the current WSU Arboretum Tree Listing, which can be found [here](https://www2.winona.edu/m/arboretum/directory.asp?t=1) (current as of May 25, 2024).
